@@ -1,1 +1,0 @@
-# kurzdor.github.io
