@@ -1,0 +1,30 @@
+header {
+	background-color:  #23232e;
+}
+
+.logo {
+	margin-top: 80px;
+}
+
+.text-1 {
+	font-family: 'Cabin', sans-serif;
+	color:  #ffffff;
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 186px;	
+}
+.text-2 {
+	font-family: 'Cabin', sans-serif;
+	color:  #ffffff;
+	font-size: 1.125em;
+	font-weight: 400;
+	line-height: 1.667;
+	margin-top: 67px;
+}
+.arrow {
+	margin-top: 187px;
+	margin-bottom: 47px;
+}
