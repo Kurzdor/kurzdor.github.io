@@ -1,0 +1,11 @@
+.kurzdor {
+	color: #f0f0f0;
+}
+.kurzdor:hover {
+	color: #4d4dff;
+}
+
+@font-face {
+	font-family: "Venetian";
+	src: url(../video/Venetian.otf) format('opentype');
+}
