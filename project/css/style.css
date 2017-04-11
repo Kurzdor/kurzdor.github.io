@@ -1,0 +1,18 @@
+.act {
+	border-top: 2px solid !important; 
+	border-top-color: black !important;
+}
+.bd-t {
+	border-top: none;
+}
+.bd-t:hover {
+	border-top: 2px solid;
+	border-top-color: #000000;
+}
+.nissan > img {
+	border-bottom: none;
+}
+.nissan > img:hover {
+	border-bottom: 3px solid !important;
+	border-bottom-color: black !important;
+}
