@@ -9,10 +9,10 @@
 	border-top: 2px solid;
 	border-top-color: #000000;
 }
-.nissan > img {
+.auto > img {
 	border-bottom: none;
 }
-.nissan > img:hover {
+.auto > img:hover {
 	border-bottom: 3px solid !important;
 	border-bottom-color: black !important;
 }
