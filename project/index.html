@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="theme-color" content="#000000">
 	<title>auto.hu</title>
+	<link rel="icon" href="favicon.png">
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -52,14 +54,15 @@
 			<div class="w3-col" style="visibility: hidden; width: 3%">
 				_
 			</div>
-			<div class="w3-col l3 w3-card w3-xxlarge" style="padding-top: 1%; padding-left: 2%; font-family: 'Titillium Web',sans-serif;">
+			<!-- Login form -->
+			<div class="w3-hide-medium w3-hide-small w3-col l3 w3-card w3-xxlarge" style="padding-top: 1%; padding-left: 2%; font-family: 'Titillium Web',sans-serif;">
 				Login
 				<hr style="width: 90%">
-				<div class="w3-large">
+				<div class="login w3-large">
 					<label>Username</label>
 					<input class="w3-input w3-border w3-margin-bottom w3-margin-right" type="text" placeholder="Enter Username" name="usrname" required="" style="width: 90%">
 					<label>Password</label>
-					<input class="w3-input w3-border w3-margin-bottom w3-margin-right" type="password" placeholder="Your password" name="password" required="" style="width: 90%">
+					<input class="w3-input w3-border w3-margin-bottom w3-margin-right" type="password" placeholder="Enter Password" name="password" required="" style="width: 90%">
 					<div class="w3-btn w3-margin-bottom"><i class="fa fa-sign-in" aria-hidden="true" style="margin-right: 10%"></i>Login</div>
 				</div>
 			</div>
@@ -160,6 +163,20 @@
 			</div>
 		</div>
 	</div>
+	<!-- Login form(hidden on large screens) -->
+	<div class="w3-row">
+		<div class="w3-col w3-card w3-xxlarge w3-hide-large" style="padding-top: 1%; padding-left: 2%; font-family: 'Titillium Web',sans-serif;">
+				Login
+				<hr style="width: 90%">
+				<div class="login w3-large">
+					<label>Username</label>
+					<input class="w3-input w3-border w3-margin-bottom w3-margin-right" type="text" placeholder="Enter Username" name="usrname" required="" style="width: 90%">
+					<label>Password</label>
+					<input class="w3-input w3-border w3-margin-bottom w3-margin-right" type="password" placeholder="Your password" name="password" required="" style="width: 90%">
+					<div class="w3-btn w3-margin-bottom"><i class="fa fa-sign-in" aria-hidden="true" style="margin-right: 10%"></i>Login</div>
+				</div>
+			</div>
+	</div>
 	<div class="w3-row" style="margin-top: 1%; margin-bottom: 1%">
 		<div class="w3-col l1" style="visibility: hidden;">
 			_
@@ -167,11 +184,9 @@
 		<div class="w3-col l7">
 				<div class="w3-bar">
 					<div class="items w3-right">
-						<a href="#" class="w3-button">1</a>
+						<a href="#" class="w3-hover-black w3-black w3-button">1</a>
 				  		<a href="#" class="w3-button">2</a>
 				  		<a href="#" class="w3-button">3</a>
-				  		<a href="#" class="w3-button">4</a>
-				  		<a href="#" class="w3-button">5</a>
 					</div>
 				</div>
 		</div>
