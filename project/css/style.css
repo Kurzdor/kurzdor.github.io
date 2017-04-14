@@ -24,3 +24,6 @@
 .active:hover {
 	background-color: black !important;
 }
+a {
+	text-decoration: none;
+}
