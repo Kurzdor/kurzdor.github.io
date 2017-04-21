@@ -5,7 +5,7 @@
 	<meta name="theme-color" content="#000000">
 	<title>Home - auto.hu</title>
 	<link rel="icon" href="favicon.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -37,8 +37,8 @@
 
 	<!-- Navbar on small screens -->
 	<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-top" style="margin-top:50px; font-family: 'Titillium Web', sans-serif; background-color: rgba(255,255,255,0.1);">
-		<a href="contacts/" class="w3-bar-item w3-btn w3-padding-large">CONTACTS</a>
-		<div id="movetosocial" onclick="myFunction()" class="w3-bar-item w3-btn w3-padding-large">SOCIAL</div>
+		<a href="#band" class="w3-bar-item w3-btn w3-padding-large">CONTACTS</a>
+		<div id="social" onclick="myFunction()" class="w3-bar-item w3-btn w3-padding-large">SOCIAL</div>
 	</div>
 
 	<div id="top" class="w3-image w3-center">
@@ -216,7 +216,7 @@
 				</div>
 		</div>
 	</div>
-	<div id="social" class="w3-bar w3-card" style="font-family: 'Titillium Web', sans-serif;">
+	<div id="socials" class="w3-bar w3-card" style="font-family: 'Titillium Web', sans-serif;">
 		<div class="w3-center">
 		<div class="content">
 			Powered by w3.css
@@ -239,21 +239,21 @@
 	}
 
 	$("#mover").click(function() {
-    	$('html, body').animate({
-        		scrollTop: $("#main").offset().top
-    	}, 1500);
+    		$('html, body').animate({
+        			scrollTop: $("#main").offset().top
+    		}, 1500);
 	});
 
 	$("#up").click(function() {
-    	$('html, body').animate({
-       		 scrollTop: $("#top").offset().top
-    	}, 3000);
+    		$('html, body').animate({
+       			 scrollTop: $("#top").offset().top
+    		}, 3000);
 	});
-	$("#movetosocial").click(function() {
-    	$('html, body').animate({
-       		 scrollTop: $("#social").offset().top
-    	}, 3000);
-	})
+	$("#social").click(function() {
+    		$('html, body').animate({
+       		 	scrollTop: $("#socials").offset().top
+    		}, 3000);
+	});
 	</script>
 </body>
 </html>

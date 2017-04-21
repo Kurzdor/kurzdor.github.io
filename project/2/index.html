@@ -13,25 +13,41 @@
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-	<div class="w3-bar w3-white w3-xlarge w3-top" style="font-family: 'Titillium Web', sans-serif;">
-		<div class="w3-bar-item w3-btn" style="border-top: 2px solid; border-top-color: #fff">
-			<a href="../index.html">AUTO.HU</a>
-		</div>
-		<div class="w3-bar-item w3-btn act">Home</div>
-		<div class="w3-bar-item w3-btn bd-t">Contacts</div>
-		<div class="w3-right">
-			<div class="w3-bar-item w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-vk" aria-hidden="true"></a></i></div>
-			<div class="w3-bar-item w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-facebook" aria-hidden="true"></a></i></div>
-			<div class="w3-bar-item w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-google-plus" aria-hidden="true"></a></i></div>
+	<!-- Navbar on large screens -->
+	<div class="w3-top w3-hide-small w3-hide-medium">
+		<div class="w3-bar w3-white w3-top w3-xlarge" style="font-family: 'Titillium Web', sans-serif; padding-top: 2px">
+			<div class="w3-right" style="font-size: 29px">
+				<div class="w3-bar-item w3-hide-small w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-vk" aria-hidden="true"></a></i></div>
+				<div class="w3-bar-item w3-hide-small w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-facebook" aria-hidden="true"></a></i></div>
+				<div class="w3-bar-item w3-hide-small w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-google-plus" aria-hidden="true"></a></i></div>
+			</div>
+			<a href="../index.html" class="w3-bar-item w3-btn w3-padding-large">AUTO.HU</a>
+			<a href="../index.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small bd-t">HOME</a>
+			<a href="../contacts/index.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small bd-t">CONTACTS</a>
 		</div>
 	</div>
-	<div class="w3-image w3-center">
+
+	<!-- Navbar on medium and small screens -->
+	<div class="w3-top w3-hide-large">
+		<div class="w3-bar w3-top w3-xlarge" style="font-family: 'Titillium Web', sans-serif; padding-top: 2px; background-color: rgba(255,255,255,0.1);">
+			<a class="w3-bar-item w3-btn w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="../index.html" class="w3-bar-item w3-padding-large">AUTO.HU</a>
+		</div>
+	</div>
+
+	<!-- Navbar on small screens -->
+	<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-top" style="margin-top:50px; font-family: 'Titillium Web', sans-serif; background-color: rgba(255,255,255,0.1);">
+		<a href="#band" class="w3-bar-item w3-btn w3-padding-large">BAND</a>
+		<a href="#tour" class="w3-bar-item w3-btn w3-padding-large">TOUR</a>
+	</div>
+
+	<div id="top" class="w3-image w3-center">
 		<img src="../img/PNGPIX-COM-Techart-Porsche-Cayenne-White-Car-PNG-Image.png" alt="" style="margin-top: 5%; width: 70%; height: 70%">
 	</div>
 	<div class="w3-jumbo w3-center" style="font-family: 'Titillium Web', sans-serif; text-shadow:1px 2px 0 #3d3d3d">
 		BLOG ABOUT CARS
 	</div>
-	<div class="w3-center"><a href="#main"><img src="../img/Arrow-down.svg" alt="" style="width: 3%; height: 3%;margin-bottom: 3%"></a></div>
+	<div class="w3-center"><img src="../img/Arrow-down.svg" alt="" style="width: 3%; height: 3%;margin-bottom: 3%"></div>
 	<div id="main"></div>
 	<div class="w3-row" style="margin-top: 5%;">
 		<div class="w3-col l1" style="visibility: hidden;">
@@ -204,6 +220,7 @@
 		<div class="w3-center">
 		<div class="content">
 			Powered by w3.css
+			<div id="up" class="w3-right"><i style="font-size: 2.5em" class="fa fa-angle-up" aria-hidden="true"></i></div>
 			<br/>
 			<a href="https://vk.com/Kurzdor"><i class="fa fa-vk" aria-hidden="true"></a></i>
 			<a href="https://vk.com/Kurzdor"><i class="fa fa-facebook" aria-hidden="true"></a></i>
@@ -211,5 +228,27 @@
 		</div>
 		</div>
 	</div>
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("navDemo");
+	    if (x.className.indexOf("w3-show") == -1) {
+	        x.className += " w3-show";
+	    } else { 
+	        x.className = x.className.replace(" w3-show", "");
+	    }
+	}
+
+	$("#mover").click(function() {
+    		$('html, body').animate({
+        			scrollTop: $("#main").offset().top
+    		}, 1500);
+	});
+	
+	$("#up").click(function() {
+    		$('html, body').animate({
+       			 scrollTop: $("#top").offset().top
+    		}, 3000);
+	});
+	</script>
 </body>
 </html>
