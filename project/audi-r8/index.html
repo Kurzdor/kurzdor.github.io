@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#000000">
+	<title>auto.hu</title>
+	<link rel="icon" href="../favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<!-- <div class="w3-bar w3-white w3-xlarge w3-top" style="font-family: 'Titillium Web', sans-serif;">
+		<div class="w3-bar-item w3-btn" style="border-top: 2px solid; border-top-color: #fff">
+			AUTO.HU
+		</div>
+		<div class="w3-bar-item w3-btn act">Home</div>
+		<div class="w3-bar-item w3-btn bd-t">Contacts</div>
+		<div class="w3-right">
+			<div class="w3-bar-item w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-vk" aria-hidden="true"></a></i></div>
+			<div class="w3-bar-item w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-facebook" aria-hidden="true"></a></i></div>
+			<div class="w3-bar-item w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-google-plus" aria-hidden="true"></a></i></div>
+		</div>
+	</div> -->
+	<!-- Navbar on large screens -->
+	<div class="w3-top w3-hide-small w3-hide-medium">
+		<div class="w3-bar w3-white w3-top w3-xlarge" style="font-family: 'Titillium Web', sans-serif; padding-top: 2px">
+			<div class="w3-right" style="font-size: 29px">
+				<div class="w3-bar-item w3-hide-small w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-vk" aria-hidden="true"></a></i></div>
+				<div class="w3-bar-item w3-hide-small w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-facebook" aria-hidden="true"></a></i></div>
+				<div class="w3-bar-item w3-hide-small w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-google-plus" aria-hidden="true"></a></i></div>
+			</div>
+			<a href="../index.html" class="w3-bar-item w3-btn w3-padding-large">AUTO.HU</a>
+			<a href="../index.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small bd-t">HOME</a>
+			<a href="../contacts/index.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small bd-t">CONTACTS</a>
+		</div>
+	</div>
+
+	<!-- Navbar on medium and small screens -->
+	<div class="w3-top w3-hide-large">
+		<div class="w3-bar w3-top w3-xlarge" style="font-family: 'Titillium Web', sans-serif; padding-top: 2px; background-color: rgba(255,255,255,0.1);">
+			<a class="w3-bar-item w3-btn w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="../index.html" class="w3-bar-item w3-padding-large">AUTO.HU</a>
+		</div>
+	</div>
+
+	<!-- Navbar on small screens -->
+	<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-top" style="margin-top:50px; font-family: 'Titillium Web', sans-serif; background-color: rgba(255,255,255,0.1);">
+		<a href="#band" class="w3-bar-item w3-btn w3-padding-large">BAND</a>
+		<a href="#tour" class="w3-bar-item w3-btn w3-padding-large">TOUR</a>
+	</div>
+
+	<div id="top" class="w3-image w3-center">
+		<img src="../img/PNGPIX-COM-Techart-Porsche-Cayenne-White-Car-PNG-Image.png" alt="" style="margin-top: 5%; width: 70%; height: 70%">
+	</div>
+	<div class="w3-jumbo w3-center" style="font-family: 'Titillium Web', sans-serif; text-shadow:1px 2px 0 #3d3d3d">
+		BLOG ABOUT CARS
+	</div>
+	<div id="mover" class="w3-center"><img src="../img/Arrow-down.svg" alt="" style="width: 3%; height: 3%;margin-bottom: 3%"></div>
+	<div id="main"></div>
+	<!-- Row start -->
+	<div class="w3-row" style="margin-top: 5%;">
+		<div class="w3-col l1" style="visibility: hidden;">
+			_
+		</div>
+		<div class="w3-col l7 w3-card w3-xxlarge">
+			<div class="header" style="padding-top: 1.5%; padding-left: 2%; font-family: 'Titillium Web',sans-serif;">
+				Oh yes, Audi has built a hardcore R8 GT4
+			</div>
+			<hr/>
+			<div class="auto w3-image w3-center">
+				<img src="../img/a172723_large.jpg" alt="" style="width: 75%; height: 50%; margin-bottom: 3%;">
+			</div>
+			<div class="w3-large" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'PT Sans', sans-serif;">
+				<b>A hardcore Audi R8? God yes. </b>
+				<br/>
+				Hold your horses. This is no competitor for the Porsche 911 GT3, Mercedes AMG GT R or BMW M4 GTS. Audi says the R8 LMS GT4 is the “ideal race car for amateur campaigners” – a non-road-legal, off-the-shelf race car - like the Porsche Cayman GT4 Clubsport - which will be eligible for series like the British GT Championship and one-offs like the Nürburgring 24hrs.
+			</div>
+			<div class="auto w3-image w3-center">
+				<img src="../img/audi-r8/a172704_large.jpg" alt="" style="width: 75%; height: 50%; margin-bottom: 3%;">
+			</div>
+			<div class="w3-large" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'PT Sans', sans-serif;">
+				<b>“Will be” eligible? So it’s not finished?</b>
+				<br/>
+				Not quite. Audi is developing the GT4 LMS “in the course of the 2017 season before achieving a final homologation state and requesting approval for racing” in the second half of this year. Cars will be delivered to customers by the end of 2017.
+			</div>
+			<div class="auto w3-image w3-center">
+				<img src="../img/audi-r8/a172707_large.jpg" alt="" style="width: 75%; height: 50%; margin-bottom: 3%;">
+			</div>					
+			<div class="w3-large" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'PT Sans', sans-serif;">
+				<b>How close is it to the regular R8?</b>
+				<br/>									
+				Very. The GT4 shares 60 per cent of its components with the road-going car (the R8 GT3 car shares around 50 per cent of its parts with the normal R8), and will be built at the same factory in Germany.
+			</div>
+			<div class="auto w3-image w3-center">
+				<img src="../img/audi-r8/a172712_large.jpg" alt="" style="width: 75%; height: 50%; margin-bottom: 3%;">
+			</div>
+			<div class="w3-large" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'PT Sans', sans-serif;">
+				<b>Fast?</b>
+				<br/>				
+				Yep, but competition rules mean it’s not as powerful as the road car. The same set of rules also prohibit all-wheel drive. So the 5.2-litre N/A V10 delivers up to 495bhp (the exact amount varies, and depends on Balance of Performance regulations), channelled to the rear wheels only via a seven-speed double-clutch gearbox and mechanical LSD. A different exhaust, ECU map and a restrictor plate are the only engine mods. A full rebuild is required after 20,000kms.
+				0-62mph is said to take under four seconds, and the top speed is in excess of 155mph. The dry weight is 1,460kg before ballast.
+				“Rebound and compression adjustable racing-specific dampers and springs, as well as adjustable stabilisers” have been added to the road car’s double-wishbone setup, the brakes are steel and equipped with the road car’s ABS system, and the steering is from the R8 GT3.
+			</div>
+			<div class="auto w3-image w3-center">
+				<img src="../img/audi-r8/a172715_large.jpg" alt="" style="width: 75%; height: 50%; margin-bottom: 3%;">
+			</div>
+			<div class="w3-large" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'PT Sans', sans-serif;">
+				<b>What’s been done to the body?</b>
+				<br/>				
+				Well there’s a hatch in the roof for a swift rescue in the event of an accident, plus more aero. The bigger wing is supplemented by a different bonnet, dive planes and what looks like a more aggressive front bumper. Then there’s the exhaust, which now exits where you’d normally find the rear number plate. Inside much has been stripped away to save weight and to make room for the mandatory cage, seats and harnesses.
+			</div>
+			<div class="auto w3-image w3-center">
+				<img src="../img/audi-r8/a172719_large.jpg" alt="" style="width: 75%; height: 50%; margin-bottom: 3%;">
+			</div>
+			<div class="w3-large" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'PT Sans', sans-serif;">
+				<b>How much?</b>
+				<br/>				
+				No clue yet, but the GT3 car is around €359,000 before tax, which is actually pretty reasonable. It’ll line-up somewhere between that and the €99,000 RS3 LMS.
+			</div>
+			<div class="w3-large" style="margin-left: 5%; font-family: 'PT Sans', sans-serif;">	
+				Share this page:		
+			</div>
+			<div class="w3-bar w3-large" style="margin-left: 5%; margin-bottom: 0.5%; width: 40%">
+				<div class="items__">
+					<button onclick="document.getElementById('social').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-vk"></i></button>
+					<button onclick="document.getElementById('social').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-facebook"></i></button>
+					<button onclick="document.getElementById('social').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-google-plus"></i></button>
+				</div>
+			</div>	
+			<div class="w3-bar w3-large" style="margin-left: 5%; margin-bottom: 3%; font-family: 'PT Sans', sans-serif; width: 40%">
+				<div class="w3-bar-item"><i class="fa fa-user-circle" aria-hidden="true"></i>Kurzdor</div>
+				<div class="w3-bar-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>14/04/2017</div>
+			</div>
+		</div>
+	</div>	
+	<!-- Row end --> 
+	<div class="w3-bar w3-card" style="font-family: 'Titillium Web', sans-serif;">
+		<div class="w3-center">
+			<div class="content">
+				Powered by w3.css
+				<div id="up" class="w3-right"><i style="font-size: 2.5em" class="fa fa-angle-up" aria-hidden="true"></i></div>
+				<br/>
+				<a href="https://vk.com/Kurzdor"><i class="fa fa-vk" aria-hidden="true"></a></i>
+				<a href="https://vk.com/Kurzdor"><i class="fa fa-facebook" aria-hidden="true"></a></i>
+				<a href="https://vk.com/Kurzdor"><i class="fa fa-google-plus" aria-hidden="true"></a></i>	
+			</div>
+		</div>
+	</div>
+	<!-- Social Modal --> 
+	<div id="social" class="w3-modal">
+  		<div class="w3-modal-content w3-animate-opacity">
+    		<div class="w3-container">
+      			<p class="w3-xxxlarge w3-center" style="font-family: 'Titillium Web', sans-serif; padding-top: 35%">Thanks for helping us!</div>
+      			<div style="padding-bottom: 32%"></div>
+    		</div>
+  		</div>
+	</div>
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("navDemo");
+	    if (x.className.indexOf("w3-show") == -1) {
+	        x.className += " w3-show";
+	    } else { 
+	        x.className = x.className.replace(" w3-show", "");
+	    }
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	var modal = document.getElementById('social');
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    modal.style.display = "none";
+	  }
+	}
+</script>
+<script>
+	$("#mover").click(function() {
+    		$('html, body').animate({
+        			scrollTop: $("#main").offset().top
+    		}, 1500);
+	});
+	$("#up").click(function() {
+    		$('html, body').animate({
+       			 scrollTop: $("#top").offset().top
+    		}, 3000);
+	});
+</script>
+</body>
+</html>
