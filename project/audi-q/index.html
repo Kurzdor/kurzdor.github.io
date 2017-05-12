@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="theme-color" content="#000000">
-	<title>auto.hu</title>
+	<title>Hold onto your trendy hats, more Audi Q SUVs are coming - auto.hu</title>
 	<link rel="icon" href="../favicon.png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
 	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet">
@@ -37,8 +37,8 @@
 
 	<!-- Navbar on small screens -->
 	<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-top" style="margin-top:50px; font-family: 'Titillium Web', sans-serif; background-color: rgba(255,255,255,0.1);">
-		<a href="#band" class="w3-bar-item w3-btn w3-padding-large">BAND</a>
-		<a href="#tour" class="w3-bar-item w3-btn w3-padding-large">TOUR</a>
+		<a href="/contacts" class="w3-bar-item w3-btn w3-padding-large">CONTACTS</a>
+		<div id="social" onclick="myFunction()" class="w3-bar-item w3-btn w3-padding-large">SOCIAL</div>
 	</div>
 
 	<div id="top" class="w3-image w3-center">
@@ -93,9 +93,9 @@
 			</div>
 			<div class="w3-bar w3-large" style="margin-left: 5%; margin-bottom: 0.5%; width: 40%">
 				<div class="items__">
-					<button onclick="document.getElementById('social').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-vk"></i></button>
-					<button onclick="document.getElementById('social').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-facebook"></i></button>
-					<button onclick="document.getElementById('social').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-google-plus"></i></button>
+					<button onclick="document.getElementById('social2').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-vk"></i></button>
+					<button onclick="document.getElementById('social2').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-facebook"></i></button>
+					<button onclick="document.getElementById('social2').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-google-plus"></i></button>
 				</div>
 			</div>	
 			<div class="w3-bar w3-large" style="margin-left: 5%; margin-bottom: 3%; font-family: 'PT Sans', sans-serif; width: 40%">
@@ -105,7 +105,7 @@
 		</div>
 	</div>	
 	<!-- Row end --> 
-	<div class="w3-bar w3-card" style="font-family: 'Titillium Web', sans-serif;">
+	<div id="socials" class="w3-bar w3-card" style="font-family: 'Titillium Web', sans-serif;">
 		<div class="w3-center">
 			<div class="content">
 				Powered by w3.css
@@ -118,7 +118,7 @@
 		</div>
 	</div>
 	<!-- Social Modal --> 
-	<div id="social" class="w3-modal">
+	<div id="social2" class="w3-modal">
   		<div class="w3-modal-content w3-animate-opacity">
     		<div class="w3-container">
       			<p class="w3-xxxlarge w3-center" style="font-family: 'Titillium Web', sans-serif; padding-top: 35%">Thanks for helping us!</div>
@@ -137,7 +137,7 @@
 	}
 
 	// When the user clicks anywhere outside of the modal, close it
-	var modal = document.getElementById('social');
+	var modal = document.getElementById('social2');
 	window.onclick = function(event) {
 	  if (event.target == modal) {
 	    modal.style.display = "none";
@@ -153,6 +153,11 @@
 	$("#up").click(function() {
     		$('html, body').animate({
        			 scrollTop: $("#top").offset().top
+    		}, 3000);
+	});
+	$("#social").click(function() {
+    		$('html, body').animate({
+       			 scrollTop: $("#socials").offset().top
     		}, 3000);
 	});
 </script>
