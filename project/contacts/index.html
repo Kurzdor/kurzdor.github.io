@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="#000000">
+	<title>Contacts - auto.hu</title>
+	<link rel="icon" href="../favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+	<!-- Navbar on large screens -->
+	<div class="w3-top w3-hide-small w3-hide-medium">
+		<div class="w3-bar w3-white w3-top w3-xlarge" style="font-family: 'Titillium Web', sans-serif; padding-top: 2px">
+			<div class="w3-right" style="font-size: 29px">
+				<div class="w3-bar-item w3-hide-small w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-vk" aria-hidden="true"></a></i></div>
+				<div class="w3-bar-item w3-hide-small w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-facebook" aria-hidden="true"></a></i></div>
+				<div class="w3-bar-item w3-hide-small w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-google-plus" aria-hidden="true"></a></i></div>
+			</div>
+			<a href="../index.html" class="w3-bar-item w3-btn w3-padding-large">AUTO.HU</a>
+			<a href="../index.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small bd-t">HOME</a>
+			<a href="../contacts/index.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small bd-t">CONTACTS</a>
+		</div>
+	</div>
+
+	<!-- Navbar on medium and small screens -->
+	<div class="w3-top w3-hide-large">
+		<div class="w3-bar w3-top w3-xlarge" style="font-family: 'Titillium Web', sans-serif; padding-top: 2px; background-color: rgba(255,255,255,0.1);">
+			<a class="w3-bar-item w3-btn w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+			<a href="../index.html" class="w3-bar-item w3-padding-large">AUTO.HU</a>
+		</div>
+	</div>
+
+	<!-- Navbar on small screens -->
+	<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-top" style="margin-top:50px; font-family: 'Titillium Web', sans-serif; background-color: rgba(255,255,255,0.1);">
+		<a href="../contacts/" class="w3-bar-item w3-btn w3-padding-large">CONTACTS</a>
+		<div id="social" onclick="myFunction()" class="w3-bar-item w3-btn w3-padding-large">SOCIAL</div>
+	</div>2
+
+	<div id="top" class="w3-image w3-center">
+		<img src="../img/PNGPIX-COM-Techart-Porsche-Cayenne-White-Car-PNG-Image.png" alt="" style="margin-top: 5%; width: 70%; height: 70%">
+	</div>
+	<div class="w3-jumbo w3-center" style="font-family: 'Titillium Web', sans-serif; text-shadow:1px 2px 0 #3d3d3d">
+		BLOG ABOUT CARS
+	</div>
+	<div id="mover" class="w3-center"><img src="../img/Arrow-down.svg" alt="" style="width: 3%; height: 3%;margin-bottom: 3%"></div>
+	<div id="main"></div>
+	<!-- Row start -->
+	<div class="w3-row" style="margin-top: 5%;">
+		<div class="w3-col l1" style="visibility: hidden;">
+			_
+		</div>
+		<div class="w3-col l7 w3-card w3-xxlarge">
+			<div class="header w3-center" style="padding-top: 1.5%; padding-left: 2%; font-family: 'Titillium Web',sans-serif;">
+				Contact us
+			</div>
+			<hr/>
+			<div class="w3-large w3-center" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'PT Sans', sans-serif;">
+				<span><i class="fa fa-map-marker" aria-hidden="true"></i>UK, Kolotushkina str. 8 </span>
+				<br/>
+				<span><i class="fa fa-phone" aria-hidden="true"></i> +2445645642356 </span>
+			</div>
+<!--
+			<div class="auto w3-image w3-center">
+				<img src="../img/toppolicecars/mustang-police-car-3.jpg" alt="" style="width: 75%; height: 50%; margin-bottom: 3%;">
+			</div>
+			<div class="w3-large" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'PT Sans', sans-serif;">
+				<b>UK Police Ford Mustang V8</b>
+				<br/>	
+				<br/>
+				This is a picture of a Ford Mustang decked out in police livery. You’ll agree, it looks fantastic.
+				It is - apparently - a pre-production model, displayed at the National Association of Police Fleet Managers trade show. So it’s a bit off policing the streets of the UK.
+				But, as cop cars go, it’s certainly up there amongst the coolest around. Or is it?	
+			</div>
+			<div class="auto w3-image w3-center">
+				<img src="../img/toppolicecars/alfa-romeo-giulia-qv0police-4.jpeg" alt="" style="width: 75%; height: 50%; margin-bottom: 3%;">
+			</div>					
+			<div class="w3-large" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'PT Sans', sans-serif;">
+				<b>Carabinieri Alfa Giulia QV</b>
+				<br/>
+				<br/>
+				Italy’s smart-suited Carabinieri – the harder, military arm of the Italian police – had some amazing company cars.
+				Being suave, sophisticated types, they didn’t just slap some stickers and two-tones on a bunch of Fiat 500s. Oh no. See, the Carabinieri have form when selecting patrol cars. Previous fleets include Lamborghini Gallardos, Huracans and Lotus Evoras. But this time they stayed on home turf and went for Alfa’s new M3-rivaling saloon, the 503bhp Giulia QV.
+			</div>
+			<div class="auto w3-image w3-center">
+				<img src="../img/toppolicecars/19EDE796-3A0E-45BC-A242-65F297CBA693_0.jpg" alt="" style="width: 75%; height: 50%; margin-bottom: 3%;">
+			</div>
+			<div class="w3-large" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'PT Sans', sans-serif;">
+				<b>Dubai Police BMW i8</b>
+				<br/>
+				<br/>
+				The quote is brief, but clarifies what we’ve wanted to know: that Dubai’s police fleet is the coolest police fleet in the world. “The Dubai Police Force has always sought, through the introduction of sports leagues within its vehicle fleet, to enhance the security presence for the police, and to keep up with the highest international standards of technical and scientific developments.”
+				They’ve got a Lamborghini, a Bentley, an Aston Martin, a Ferrari, a McLaren and others, but now they’ve just added Top Gear magazine’s 2014 Car of the Year to the garage: a BMW i8.
+				Yep, the petrol-electric hybrid with looks straight out of a science fiction comic has landed in the Middle East, and has added yet another astonishing motor to a collection of cars that is fast becoming, well, fast.
+				You’ll know all about the i8 and its prowess, but if not, click here.
+			</div>
+			<div class="auto w3-image w3-center">
+				<img src="../img/toppolicecars/97B2101F-D61E-43C5-B943-F9BD888AA2D6.jpg" alt="" style="width: 75%; height: 50%; margin-bottom: 3%;">
+			</div>
+			<div class="w3-large" style="margin-left: 5%; margin-right: 5%; margin-bottom: 5%; font-family: 'PT Sans', sans-serif;">
+				<b>UK police Caparo T1</b>
+				<br/>
+				<br/>
+				Another ‘safety-message’ stunt saw this Caparo T1 liveried up as a police car. But just imagine if it really was a police pursuit vehicle.
+			</div>
+			<div class="w3-large" style="margin-left: 5%; font-family: 'PT Sans', sans-serif;">	
+				Share this page:		
+			</div>
+			<div class="w3-bar w3-large" style="margin-left: 5%; margin-bottom: 0.5%; width: 40%">
+				<div class="items__">
+					<button onclick="document.getElementById('social2').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-vk"></i></button>
+					<button onclick="document.getElementById('social2').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-facebook"></i></button>
+					<button onclick="document.getElementById('social2').style.display='block'" class="w3-bar-item w3-btn"><i class="fa fa-google-plus"></i></button>
+				</div>
+			</div>	
+			<div class="w3-bar w3-large" style="margin-left: 5%; margin-bottom: 3%; font-family: 'PT Sans', sans-serif; width: 40%">
+				<div class="w3-bar-item"><i class="fa fa-user-circle" aria-hidden="true"></i>Kurzdor</div>
+				<div class="w3-bar-item"><i class="fa fa-calendar-o" aria-hidden="true"></i>14/04/2017</div>
+			</div>
+		</div> -->
+	</div>	
+	<!-- Row end --> 
+	<div id="socials" class="w3-bar w3-card" style="font-family: 'Titillium Web', sans-serif;">
+		<div class="w3-center">
+			<div class="content">
+				Powered by w3.css
+				<div id="up" class="w3-right"><i style="font-size: 2.5em" class="fa fa-angle-up" aria-hidden="true"></i></div>
+				<br/>
+				<a href="https://vk.com/Kurzdor"><i class="fa fa-vk" aria-hidden="true"></a></i>
+				<a href="https://vk.com/Kurzdor"><i class="fa fa-facebook" aria-hidden="true"></a></i>
+				<a href="https://vk.com/Kurzdor"><i class="fa fa-google-plus" aria-hidden="true"></a></i>	
+			</div>
+		</div>
+	</div>
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("navDemo");
+	    if (x.className.indexOf("w3-show") == -1) {
+	        x.className += " w3-show";
+	    } else { 
+	        x.className = x.className.replace(" w3-show", "");
+	    }
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	var modal = document.getElementById('social2');
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+	    modal.style.display = "none";
+	  }
+	}
+</script>
+<script>
+	$("#mover").click(function() {
+    		$('html, body').animate({
+        			scrollTop: $("#main").offset().top
+    		}, 1500);
+	});
+	$("#up").click(function() {
+    		$('html, body').animate({
+       			 scrollTop: $("#top").offset().top
+    		}, 3000);
+	});
+	$("#social").click(function() {
+    		$('html, body').animate({
+       			 scrollTop: $("#socials").offset().top
+    		}, 3000);
+	});
+</script>
+</body>
+</html>
