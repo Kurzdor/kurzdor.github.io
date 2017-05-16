@@ -21,9 +21,9 @@
 				<div class="w3-bar-item w3-hide-small w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-facebook" aria-hidden="true"></a></i></div>
 				<div class="w3-bar-item w3-hide-small w3-btn bd-t"><a href="https://vk.com/Kurzdor"><i class="fa fa-google-plus" aria-hidden="true"></a></i></div>
 			</div>
-			<a href="../index.html" class="w3-bar-item w3-btn w3-padding-large">AUTO.HU</a>
-			<a href="../index.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small bd-t">HOME</a>
-			<a href="../contacts/index.html" class="w3-bar-item w3-btn w3-padding-large w3-hide-small bd-t">CONTACTS</a>
+			<a href="../" class="w3-bar-item w3-btn w3-padding-large">AUTO.HU</a>
+			<a href="../" class="w3-bar-item w3-btn w3-padding-large w3-hide-small bd-t">HOME</a>
+			<a href="../contacts/" class="w3-bar-item w3-btn w3-padding-large w3-hide-small bd-t">CONTACTS</a>
 		</div>
 	</div>
 
@@ -31,14 +31,14 @@
 	<div class="w3-top w3-hide-large">
 		<div class="w3-bar w3-top w3-xlarge" style="font-family: 'Titillium Web', sans-serif; padding-top: 2px; background-color: rgba(255,255,255,0.1);">
 			<a class="w3-bar-item w3-btn w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-			<a href="../index.html" class="w3-bar-item w3-padding-large">AUTO.HU</a>
+			<a href="../" class="w3-bar-item w3-padding-large">AUTO.HU</a>
 		</div>
 	</div>
 
 	<!-- Navbar on small screens -->
 	<div id="navDemo" class="w3-bar-block w3-hide w3-hide-large w3-top" style="margin-top:50px; font-family: 'Titillium Web', sans-serif; background-color: rgba(255,255,255,0.1);">
-		<a href="#band" class="w3-bar-item w3-btn w3-padding-large">BAND</a>
-		<a href="#tour" class="w3-bar-item w3-btn w3-padding-large">TOUR</a>
+		<a href="../contacts/" class="w3-bar-item w3-btn w3-padding-large">CONTACTS</a>
+		<div id="social" onclick="myFunction()" class="w3-bar-item w3-btn w3-padding-large">SOCIAL</div>
 	</div>
 
 	<div id="top" class="w3-image w3-center">
@@ -69,7 +69,7 @@
 					Cast your mind back to March 2015, and Christian von Koenigsegg announced that 25 Koenigsegg Agera RS cars would be built. Largely because the technology involved in developing the hugely sticky, fast and track-friendly One:1 was just too good to restrict to seven models.
 					<a href="https://www.topgear.com/car-news/new-york-motor-show/behold-1360bhp-koenigsegg-agera-rs1" style="color: white">_</a>
 					<br/>
-					<div class="w3-btn w3-right" style="font-family: 'Titillium Web', sans-serif; margin-bottom: 1%;">Read more <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+					<div class="w3-btn w3-right" style="font-family: 'Titillium Web', sans-serif; margin-bottom: 1%;"><a href="../agerars/">Read more <i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
 				</div>
 			</div>
 			<div class="w3-col" style="visibility: hidden; width: 3%">
@@ -113,7 +113,7 @@
 					This, though, is an AM37 Vanquish Volante. It is a one-of-one limited edition – see, told you Astons get no scarcer – and it’s the work of the company’s Q bespoke department. It was created to help launch the AM37 powerboat.
 					<a href="https://www.topgear.com/car-news/supercars/got-ps236k-buy-rarest-aston-martin-sale" style="color: white">_</a>
 					<br/>
-					<div class="w3-btn w3-right" style="font-family: 'Titillium Web', sans-serif; margin-bottom: 1%;">Read more <i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+					<div class="w3-btn w3-right" style="font-family: 'Titillium Web', sans-serif; margin-bottom: 1%;"><a href="../astonv">Read more <i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
 				</div>
 			</div>
 	</div>
@@ -137,7 +137,7 @@
 					It is very cool, certainly, but the Italians aren’t the only ones with flash police cars. Have a flick through the gallery for some of our faves…
 					<a href="https://www.topgear.com/car-news/supercars/meet-the-worlds-very-best-and-coolest-police-cars#1" style="color: white">_</a>
 					<br/>
-					<div class="w3-btn w3-right" style="font-family: 'Titillium Web', sans-serif; margin-bottom: 1%;"><a href="toppolicecars">Read more <i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
+					<div class="w3-btn w3-right" style="font-family: 'Titillium Web', sans-serif; margin-bottom: 1%;"><a href="../toppolicecars">Read more <i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
 				</div>
 			</div>
 	</div>
@@ -216,7 +216,7 @@
 				</div>
 		</div>
 	</div>
-	<div class="w3-bar w3-card" style="font-family: 'Titillium Web', sans-serif;">
+	<div id="socials" class="w3-bar w3-card" style="font-family: 'Titillium Web', sans-serif;">
 		<div class="w3-center">
 		<div class="content">
 			Powered by w3.css
@@ -246,6 +246,11 @@
 	$("#up").click(function() {
     		$('html, body').animate({
        			 scrollTop: $("#top").offset().top
+    		}, 3000);
+	});
+	$("#social").click(function() {
+    		$('html, body').animate({
+       			 scrollTop: $("#socials").offset().top
     		}, 3000);
 	});
 	</script>
