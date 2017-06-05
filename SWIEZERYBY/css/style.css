@@ -82,7 +82,7 @@
 
 /* --------------------------------- FONTS END -------------------------------- */
 
-html {
+body {
 	font-size: 14px;
 	overflow-x: hidden;
 }
@@ -119,7 +119,7 @@ button:focus {
 }
 
 .menu {
-	font-size: 15px; 
+	font-size: 1rem; 
 	font-weight: 800; 
 	padding-top: 0.5%
 }
@@ -128,7 +128,7 @@ button:focus {
 }
 
 .logo {
-	font-size: 25px !important;
+	font-size: 1.786em !important;
 }
 
 .btn {
@@ -136,8 +136,7 @@ button:focus {
 	color: white;
 	width: 20%;
 	font-family: 'Montserrat';
-	font-size: 14px;
-	font-weight: 700;
+	font-size: 1em;
 	text-align: center;
 	padding: 7px;
 	border: 0;
@@ -149,7 +148,7 @@ button:focus {
 .bigtext {
 	font-family: 'Montserrat';
 	color:  #ffffff;
-	font-size: 78.74px;
+	font-size: 5.624em;
 	font-weight: bold;
 	padding-top: 32vh;
 	letter-spacing: 10px;
@@ -157,27 +156,27 @@ button:focus {
 
 .small {
 	color: #ffffff;
-	font-size: 22px;
+	font-size: 1.571em;
 	letter-spacing: 7px;
 }
 
 .about-header {
 	font-family: 'Montserrat';
 	color:  #00a1eb;
-	font-size: 34px;
+	font-size: 2.429em;
 	font-weight: bold;
 }
 
 .about-text {
 	color:  #737373;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 21px;
 	text-align: left;
 }
 
 .about-telephone {
 	color:  #00a1eb;
-	font-size: 22px;
+	font-size: 1.571em;
 	font-weight: 700;
 	line-height: 21px;
 	text-align: left;
@@ -189,14 +188,13 @@ button:focus {
 
 .container > .imgtext {
 	color:  #ffffff;
-	font-size: 22px;
+	font-size: 1.571em;
 	font-weight: 700;
 	line-height: 21px;
 	text-align: left;
 	position: absolute;
 	top: 330px;
 	left: 425px;
-	width: 100%;
 }
 
 .about-btn {
@@ -204,7 +202,7 @@ button:focus {
 	display: block;
 	background-color:  #00a1eb;
 	color: white;
-	font-size: 14px;
+	font-size: 1em;
 	width: 152px;
 	height: 62px;
 	border: 0;
@@ -216,7 +214,7 @@ button:focus {
 
 .asortyment-header {
 	color:  #00a1eb;
-	font-size: 34px;
+	font-size: 2.429em;
 }
 
 .asortyment-text {
@@ -224,7 +222,7 @@ button:focus {
 	margin-left: 33%;
 	text-align: center;
 	color:  #737373;
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 21px;
 }
 
@@ -244,18 +242,38 @@ button:focus {
 .carousel-text {
 	position: absolute;
 	top: 89px;
-    left: 34px;
+    left: 19px;
+}
+
+.carousel-text-2 {
+	position: absolute;
+	top: 89px;
+    left: 40px;
 }
 
 .carousel-text h1 {
 	color:  #ffffff;
-	font-size: 20px;
+	font-size: 1.429em;
 	text-align: center;
 }
 
 .carousel-text p {
 	color:  #ffffff;
-	font-size: 24px;
+	font-size: 1.714em;
+	text-align: center;
+
+	margin-top: -1.5%;
+}
+
+.carousel-text-2 h1 {
+	color:  #ffffff;
+	font-size: 1.429em;
+	text-align: center;
+}
+
+.carousel-text-2 p {
+	color:  #ffffff;
+	font-size: 1.714em;
 	text-align: center;
 
 	margin-top: -1.5%;
@@ -278,7 +296,7 @@ button:focus {
 .asortyment-btn {
 	background-color:  #00a1eb;
 	color: white;
-	font-size: 14px;
+	font-size: 1em;
 	width: 152px;
 	height: 60px;
 	border: 0;
@@ -305,7 +323,7 @@ button:focus {
 	text-align: center;
 	
 	color:  #00a1eb;
-	font-size: 23.88px;
+	font-size: 1.714em;
 }
 
 .whywe-horizontal {
@@ -332,7 +350,7 @@ button:focus {
 	background-color:  #00a1eb;
 	width: 152px;
 
-	font-size: 14px;
+	font-size: 1em;
 	color: white;
 
 	border: 0;
@@ -362,17 +380,17 @@ button:focus {
 
 .map-text {
 	color: white;
-  text-align: right;
-  margin-left: 50%;
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
+  	text-align: right;
+  	margin-left: 50%;
+  	padding-top: 2.5%;
+ 	padding-bottom: 2.5%;
 }
 
 .map-btn {
 	background-color:  #ffffff;
 	color:  #2eb2ef;
 
-	font-size: 14px;
+	font-size: 1em;
 	line-height: 15.01px;
 	text-align: center;
 
@@ -391,7 +409,7 @@ button:focus {
 }
 
 .pre-footer-text {
-	font-size: 14px;
+	font-size: 1em;
 	color:  #737373;
 	text-align: left;
 }
@@ -404,7 +422,7 @@ footer {
 
 .footer-copy {
 	color:  #ffffff;
-	font-size: 14px;
+	font-size: 1em;
 	text-align: left;
 	padding-top: 45px;
 	padding-left: 40px;
@@ -412,7 +430,7 @@ footer {
 
 .footer-up {
 	color:  #ffffff;
-	font-size: 14px;
+	font-size: 1em;
 	padding-top: 45px;
 	padding-right: 40px;
 }
