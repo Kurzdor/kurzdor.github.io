@@ -82,8 +82,9 @@
 
 /* --------------------------------- FONTS END -------------------------------- */
 
-html{
+html {
 	font-size: 14px;
+	overflow-x: hidden;
 }
 
 section {
@@ -230,7 +231,7 @@ button:focus {
 /* ================== SLIDER ============= */
 
 .slider {
-	width: 75%;
+	width: 80%;
 	margin: 0 auto;
 	padding-top: 1.5%;
 	padding-bottom: 2.5%;
@@ -242,9 +243,8 @@ button:focus {
 
 .carousel-text {
 	position: absolute;
-	top: 0;
-	bottom: 0;
-	padding: 5em;
+	top: 89px;
+    left: 34px;
 }
 
 .carousel-text h1 {
@@ -257,6 +257,22 @@ button:focus {
 	color:  #ffffff;
 	font-size: 24px;
 	text-align: center;
+
+	margin-top: -1.5%;
+}
+
+.arrow {
+	background: none;
+	border: 0;
+}
+
+.arrow-left {
+	transform: translateX(-56px) translateY(160px);
+}
+
+.arrow-right {
+	float: right;
+    transform: translateX(62px) translateY(-145px);
 }
 
 .asortyment-btn {
