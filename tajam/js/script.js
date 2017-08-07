@@ -1,4 +1,5 @@
-$('.header-slider').slick({
+$(document).ready(function(){
+  $('.header-slider').slick({
   dots: true,
   arrows: false,
   autoplay: true,
@@ -39,4 +40,5 @@ $('.slider').slick({
     // settings: "unslick"
     // instead of a settings object
   ]
+});
 });
