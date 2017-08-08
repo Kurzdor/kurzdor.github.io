@@ -19,7 +19,6 @@ html
 .bordered
 	border: 1px solid #fff
 
-
 .slick-dots
 	padding: 2rem 0 0 0
 	text-align: center
@@ -308,7 +307,7 @@ li.slick-active
 	background: #09052f url(../img/testimonials-bg.jpg) top center no-repeat
 	background-size: cover
 	width: 100%
-	min-height: 500px
+	min-height: 450px
 	&-wrap
 		position: absolute
 		background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%)
@@ -362,20 +361,8 @@ li.slick-active
 		height: 60px
 		display: block
 		margin: 0 auto
-.arrow
-	border: 0
-	background-color: transparent
-	color: white
-	font-size: 2em
-	outline: 0
-	&-next
-		float: right
-		transform: translateX(45px) translateY(-227px)
-	&-prev
-		transform: translateX(-45px) translateY(132px)
 
-
-@media (max-width: 960px)
+@media (max-width: 959px)
 	.container-960
 		width: 100%
 	.left, .right, .bottom
@@ -392,4 +379,5 @@ li.slick-active
 		padding-top: .01rem
 		.works-link > img
 			padding-left: 10px
-
+	.testimonials
+		min-height: 700px
