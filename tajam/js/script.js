@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.preloader').hide();
+  $('.preloader').removeClass("preloader_active");
   $('.header-slider').slick({
   dots: true,
   arrows: false,
