@@ -1,0 +1,217 @@
+* {
+  -webkit-transition: ease 0.8s;
+  transition: ease 0.8s; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "Poppins", sans-serif; }
+
+.bttn {
+  display: inline-block;
+  width: 270px;
+  height: 80px;
+  padding: 2rem 5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  border: none;
+  border-radius: 3px;
+  margin-right: 20px;
+  white-space: nowrap;
+  margin-top: 50px; }
+  .bttn:last-child {
+    margin-right: 0; }
+
+.bold, .header__content-main {
+  font-weight: 700; }
+
+.regular, .header__menu-item, .header__content-btn, .cta__content-btn, .order__content-btn {
+  font-weight: 400; }
+
+.light, .bttn, .contains__content-main, .cta__content-main, .vitamins__contains-main, .doctors__benefits-main, .doctors__benefits-proslist-item, .doctors__interesting-main, .order__content-main {
+  font-weight: 300; }
+
+.theme-black, .header__menu-item-link {
+  color: #262626; }
+
+.header {
+  background: #FFF url(../img/header-bg.jpg) top center no-repeat;
+  background-size: cover; }
+  .header__navigation {
+    height: 80px; }
+    .header__navigation-logo {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+  .header__menu {
+    list-style-type: none;
+    text-align: right; }
+    .header__menu-item {
+      display: inline-block;
+      font-size: 1.4rem;
+      line-height: 80px;
+      margin-right: 36px; }
+      .header__menu-item:last-child {
+        margin-right: 0; }
+      .header__menu-item-link i {
+        color: #f96257; }
+  .header__content {
+    padding: 200px 0 265px 0;
+    text-align: center; }
+    .header__content-main {
+      text-align: center;
+      opacity: 0.8;
+      font-family: "Merriweather", serif;
+      font-size: 18.6rem;
+      color: #fff; }
+    .header__content-btn {
+      font-size: 14px;
+      font-family: "Poppins", sans-serif;
+      color: #f96257 !important;
+      border: none;
+      border-radius: 3px;
+      background-color: #fff;
+      margin-top: 61px;
+      padding: 1.6rem 3.2rem; }
+      .header__content-btn-wrapper {
+        margin-top: 30px; }
+      .header__content-btn:hover {
+        border: 1px solid #fff;
+        background: transparent;
+        color: #fff !important;
+        cursor: pointer; }
+
+.contains__content {
+  padding: 170px 0 110px 0; }
+  .contains__content-main {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.8rem;
+    color: #262626; }
+    .contains__content-main span {
+      color: #f96257; }
+  .contains__content-pros-wrapper {
+    text-align: center; }
+  .contains__content-pro1 {
+    background-color: #d8da77; }
+  .contains__content-pro2 {
+    background-color: #a7ad27; }
+  .contains__content-pro3 {
+    background-color: #f96257; }
+
+.cta__image {
+  display: block;
+  margin: 0 auto;
+  width: 100%; }
+.cta__content {
+  background-color: #f7f7f7;
+  padding: 90px 0 120px 0; }
+  .cta__content-main {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.6rem;
+    text-align: center; }
+    .cta__content-main span {
+      color: #f96257; }
+  .cta__content-btn-wrapper {
+    margin-top: 50px;
+    text-align: center; }
+  .cta__content-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background: #f96257;
+    border: none;
+    border-radius: 3px;
+    padding: 1.6rem 3.2rem;
+    text-align: center; }
+    .cta__content-btn:hover {
+      border: 1px solid #f96257;
+      color: #f96257;
+      background: transparent; }
+
+.vitamins__contains-img {
+  width: 100%; }
+.vitamins__contains-main {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.6rem;
+  color: #262626;
+  text-align: center;
+  line-height: 52px;
+  padding: 40px 0 0; }
+  .vitamins__contains-main span {
+    color: #f96257; }
+
+.doctors__benefits {
+  padding: 120px 0 80px 0; }
+  .doctors__benefits-main {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.6rem;
+    color: #262626;
+    padding-top: 240px; }
+    .doctors__benefits-main span {
+      color: #f96257; }
+  .doctors__benefits-proslist {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 21px; }
+    .doctors__benefits-proslist-item {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      line-height: 30px; }
+      .doctors__benefits-proslist-item:last-child {
+        padding-bottom: 230px; }
+      .doctors__benefits-proslist-item i {
+        padding-right: 8px; }
+  .doctors__benefits-img {
+    width: 100%; }
+.doctors__interesting {
+  background: #f96257 url(../img/doctor__interesting.jpg) 0 0 no-repeat; }
+  .doctors__interesting-main {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.8rem;
+    color: #fff;
+    text-align: center;
+    padding: 120px 0 105px 0;
+    margin: 0; }
+
+.order__content {
+  padding: 75px 0 90px 0; }
+  .order__content-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%; }
+  .order__content-main {
+    font-family: "Poppins", sans-serif;
+    font-size: 3.6rem;
+    text-align: center; }
+  .order__content-wrapper {
+    padding-top: 60px;
+    text-align: center; }
+  .order__content-btn {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    color: #fff !important;
+    padding: 1.7rem 4.5rem;
+    border-radius: 3px;
+    background-color: #f96257;
+    text-align: center; }
+    .order__content-btn:hover {
+      color: #f96257 !important;
+      border: 1px solid #f96257;
+      background-color: transparent; }
+
+@media only screen and (max-width: 768px) {
+  .header__content-main {
+    font-size: 7rem; }
+
+  .bttn:last-child {
+    margin-right: 20px; }
+
+  .doctors__benefits {
+    padding: 10px 0 10px 0; }
+    .doctors__benefits-main {
+      padding-top: 50px; }
+    .doctors__benefits-proslist-item:last-child {
+      padding-bottom: 50px; } }
+
+/*# sourceMappingURL=style.css.map */

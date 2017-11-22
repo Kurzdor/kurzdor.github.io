@@ -1,0 +1,461 @@
+// Variables
+
+$main-color: #f96257
+$text-color: #262626
+$line-color: #e7e7e7
+$gray-bgcolor: #f7f7f7
+$btn-color: #d8da77
+$second-btn-color: #a7ad27
+
+$font: 'Poppins', sans-serif
+$header-font: 'Merriweather', serif
+
+// Global styles
+*
+  transition: ease 0.8s
+
+html
+
+  font-size: 10px
+
+body
+
+  font-family: $font
+
+.bttn
+
+  display: inline-block
+
+  width: 270px
+
+  height: 80px
+
+  padding: 2rem 5rem
+
+  font-family: $font
+
+  font-size: 22px
+
+  @extend .light
+
+  border: none
+
+  border-radius: 3px
+
+  margin-right: 20px
+
+  white-space: nowrap
+
+  margin-top: 50px
+
+  &:last-child
+
+    margin-right: 0
+
+.bold
+
+  font-weight: 700
+
+.regular
+
+  font-weight: 400
+
+.light
+
+  font-weight: 300
+
+.theme-black
+
+  color: $text-color
+
+//Custom styles
+
+.header
+
+  background: #FFF url(../img/header-bg.jpg) top center no-repeat
+
+  background-size: cover
+
+  &__navigation
+
+    height: 80px
+
+    &-logo
+
+      margin-top: 15px
+      margin-bottom: 15px
+
+  &__menu
+
+    list-style-type: none
+
+    text-align: right
+
+    &-item
+
+      display: inline-block
+
+      font-size: 1.4rem
+
+      line-height: 80px
+
+      margin-right: 36px
+
+      @extend .regular
+
+      &:last-child
+
+        margin-right: 0
+
+      &-link
+
+        @extend .theme-black
+
+        i
+
+          color: $main-color
+
+  &__content
+
+    padding: 200px 0 265px 0
+
+    text-align: center
+
+    &-main
+
+      text-align: center
+
+      opacity: 0.8
+
+      font-family: $header-font
+
+      font-size: 18.6rem
+
+      color: #fff
+
+      @extend .bold
+
+    &-btn
+
+      font-size: 14px
+
+      font-family: $font
+
+      @extend .regular
+
+      color: $main-color !important
+
+      border: none
+
+      border-radius: 3px
+
+      background-color: #fff
+
+      margin-top: 61px
+
+      padding: 1.6rem 3.2rem
+
+      &-wrapper
+
+        margin-top: 30px
+
+      &:hover
+
+        border: 1px solid #fff
+
+        background: transparent
+
+        color: #fff !important
+
+        cursor: pointer
+
+.contains
+
+  &__content
+
+    padding: 170px 0 110px 0
+
+    &-main
+
+      text-align: center
+
+      font-family: $font
+
+      @extend .light
+
+      font-size: 2.8rem
+
+      color: $text-color
+
+      span
+
+        color: $main-color
+
+    &-pros-wrapper
+
+      text-align: center
+
+    &-pro1
+
+      background-color: $btn-color
+
+    &-pro2
+
+      background-color: $second-btn-color
+
+    &-pro3
+
+      background-color: $main-color
+
+.cta
+
+  &__image
+
+    display: block
+
+    margin: 0 auto
+
+    width: 100%
+
+  &__content
+
+    background-color: $gray-bgcolor
+
+    padding: 90px 0 120px 0
+
+    &-main
+
+      font-family: $font
+
+      @extend .light
+
+      font-size: 3.6rem
+
+      text-align: center
+
+      span
+
+        color: $main-color
+
+    &-btn-wrapper
+
+      margin-top: 50px
+
+      text-align: center
+
+    &-btn
+
+      font-family: $font
+
+      font-size: 14px
+
+      @extend .regular
+
+      color: #fff
+
+      background: $main-color
+
+      border: none
+
+      border-radius: 3px
+
+      padding: 1.6rem 3.2rem
+
+      text-align: center
+
+      &:hover
+
+        border: 1px solid $main-color
+
+        color: $main-color
+
+        background: transparent
+
+.vitamins
+
+  &__contains
+
+    &-img
+
+      width: 100%
+
+    &-main
+
+      font-family: $font
+
+      @extend .light
+
+      font-size: 3.6rem
+
+      color: $text-color
+
+      text-align: center
+
+      line-height: 52px
+
+      padding: 40px 0 0
+
+      span
+
+        color: $main-color
+
+.doctors
+
+  &__benefits
+
+    padding: 120px 0 80px 0
+
+    &-main
+
+      font-family: $font
+
+      @extend .light
+
+      font-size: 3.6rem
+
+      color: $text-color
+
+      padding-top: 240px
+
+      span
+
+        color: $main-color
+
+    &-proslist
+
+      list-style-type: none
+
+      padding: 0
+
+      margin-top: 21px
+
+      &-item
+
+        font-family: $font
+
+        font-size: 14px
+  
+        @extend .light
+
+        line-height: 30px
+
+        &:last-child
+
+          padding-bottom: 230px
+
+        i
+
+          padding-right: 8px
+  
+    &-img
+
+      width: 100%
+
+  &__interesting
+
+    background: $main-color url(../img/doctor__interesting.jpg) 0 0 no-repeat
+
+    &-main
+
+      font-family: $font
+
+      font-size: 2.8rem
+
+      @extend .light
+
+      color: #fff
+
+      text-align: center
+
+      padding: 120px 0 105px 0
+
+      margin: 0
+
+.order
+
+  &__content
+
+    padding: 75px 0 90px 0
+
+    &-img
+
+      display: block
+
+      margin: 0 auto
+
+      width: 100%
+
+    &-main
+
+      font-family: $font
+
+      font-size: 3.6rem
+
+      @extend .light
+
+      text-align: center
+
+    &-wrapper
+
+      padding-top: 60px
+
+      text-align: center
+    
+    &-btn
+
+      font-family: $font
+
+      @extend .regular
+
+      font-size: 1.4rem
+
+      color: #fff !important
+
+      padding: 1.7rem 4.5rem 
+
+      border:none
+    
+      border-radius: 3px
+
+      background-color: $main-color
+
+      text-align: center
+
+      &:hover 
+
+        color: $main-color !important
+
+        border: 1px solid $main-color
+
+        background-color: transparent
+
+
+
+
+
+
+// Media queries, hello my pain
+
+@media only screen and (max-width: 768px)
+
+  .header__content-main
+
+    font-size: 7rem
+
+  .bttn:last-child
+
+    margin-right: 20px
+
+  .doctors
+
+    &__benefits
+
+      padding: 10px 0 10px 0
+
+      &-main
+
+        padding-top: 50px
+
+      &-proslist-item:last-child
+
+        padding-bottom: 50px
