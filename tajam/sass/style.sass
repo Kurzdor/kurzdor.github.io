@@ -37,12 +37,75 @@ html
 li.slick-active
 	background-color: #00e0d0
 
+#top-button
+	display: none
+	position: fixed
+	bottom: 2rem
+	right: 2rem
+	background-color: #232326
+	opacity: 0.7
+	z-index: 1000
+	width: 40px
+	height: 40px
+.icon-top
+	display: block
+	font-size: 2em
+	color: #fff
+	transform: rotate(-90deg)
+	margin: 0 auto
+
+// Navigation on small screens(mobiles)
+.navigation-mobile
+	position: fixed
+	right: 0
+	width: 200px
+	height: 100vh
+	background-color: #311d5e
+	transition: 0.8s
+	z-index: 1001
+	display: flex
+	justify-content: center
+	align-items: center
+	transform: translateX(100%)
+	&_active
+		transform: translateX(0%)
+	&-exit
+		color: white
+	&-menu
+		list-style: none
+		li
+			font-family: Roboto
+			text-transform: uppercase
+			font-size: 1.4em
+			font-weight: 900
+			padding: .8rem 0
+			a
+				color: #fff
+.row-1
+	padding: 1.5rem 0 0.8rem 0
+.row-pad
+	padding: 2rem 0 0.8rem 0 
+.mango
+	padding-left: 15px
+.gucci
+	padding-top: 8px
+	padding-left: 15px
+.nike
+	padding-left: 35px
+	margin-top: -5px
+.puma
+	padding-left: 20px
+.levis
+	padding-top: 8px
+.billabong
+	padding-left: 20px
+
 
 .container-960 
 	width: 960px
 	margin-left: auto
 	margin-right: auto
-	padding: 25px
+	padding: 1.563em
 
 .header
 	background-image: url(../img/bg.jpg)
@@ -59,21 +122,52 @@ li.slick-active
 		margin-left: 2rem
 		text-align: right
 		&-item
-			color: #fff
 			display: inline-block
 			padding-right: 10px
 			font-family: Roboto
 			text-transform: uppercase
 			font-size: 0.9em
 			font-weight: 900
-			&_active
+			a
+				color: #fff
+			&_active a
 				color: #00e0d0
+	&-mobnav
+		width: 40px
+		height: 40px
+		display: block
+		position: absolute
+		top: 50%
+		right: 2.5rem
+		margin-top: 1.5rem
+		span
+			content: ' '
+			display: block
+			width: 40px
+			height: 3px
+			position: relative
+			top: 50%
+			background-color: #fff
+		span:after
+			content: ''
+			display: block
+			width: 40px
+			height: 3px
+			background-color: #fff
+			transform: translateY(8px)
+		span:before
+			content: ''
+			display: block
+			width: 40px
+			height: 3px
+			background-color: #fff
+			transform: translateY(-10px)
 	&-slider-item
 		outline: 0
 	&-slogan
-		font-family: PlayfairDisplay
+		font-family: 'Playfair Display'
 		color:  #ffffff
-		font-size: 3em
+		font-size: 2em
 		font-weight: 900
 		text-align: center
 		margin-top: 10rem
@@ -114,7 +208,7 @@ li.slick-active
 	&-wrapper
 		padding-top: 1rem
 	&-header 
-		font-family: PlayfairDisplay
+		font-family: 'Playfair Display'
 		color:  #403d4b
 		font-size: 1.375em
 		font-weight: 700
@@ -166,13 +260,13 @@ li.slick-active
 	background-color: #fff
 	&-header
 		text-transform: uppercase
-		font-family: PlayfairDisplay
+		font-family: 'Playfair Display'
 		color: rgba(65, 61, 75, 0.99)
 		font-size: 1.5em
 		font-weight: 700
 		text-align: center
 	&-about
-		font-family: PlayfairDisplay
+		font-family: 'Playfair Display'
 		color:  rgba(47, 45, 53, 0.75)
 		font-size: 1em
 		font-weight: 400
@@ -210,7 +304,7 @@ li.slick-active
 	background-size: cover
 	min-height: 650px
 	&-header
-		font-family: PlayfairDisplay
+		font-family: 'Playfair Display'
 		color: #ffffff
 		font-size: 1.375em
 		font-weight: 700
@@ -218,7 +312,7 @@ li.slick-active
 		text-transform: uppercase
 		margin-top: 1.5rem
 	&-about
-		font-family: PlayfairDisplay
+		font-family: 'Playfair Display'
 		color: rgba(white, 0.8)
 		font-size: 1.2em
 		font-weight: 400
@@ -275,7 +369,7 @@ li.slick-active
 	min-height: 60px
 	&-heading
 		text-transform: uppercase
-		font-family: PlayfairDisplay
+		font-family: 'Playfair Display'
 		color: rgba(65, 61, 75, 0.5)
 		font-size: 1.375em
 		font-weight: 700
@@ -307,7 +401,7 @@ li.slick-active
 	background: #09052f url(../img/testimonials-bg.jpg) top center no-repeat
 	background-size: cover
 	width: 100%
-	min-height: 450px
+	min-height: 500px
 	&-wrap
 		position: absolute
 		background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%)
@@ -317,12 +411,12 @@ li.slick-active
 		background: linear-gradient(90deg, #09052f 0%, #311d5e 100%)
 		opacity: 0.8
 		width: 100%
-		min-height: 100%
+		height: 100%
 	&-item
 		outline: 0
 	&-quote
 		padding-top: 3.5rem
-		font-family: PlayfairDisplay
+		font-family: 'Playfair Display'
 		color:  #ffffff
 		font-size: 6.25em
 		font-weight: 400
@@ -330,7 +424,7 @@ li.slick-active
 		text-align: center
 	&-text
 		width: 70%
-		font-family: PlayfairDisplay
+		font-family: 'Playfair Display'
 		color: #ffffff
 		font-size: 1.2em
 		font-weight: 400
@@ -365,7 +459,7 @@ li.slick-active
 		height: auto
 .contact
 	&-header
-		font-family: PlayfairDisplay
+		font-family: 'Playfair Display'
 		color:  rgba(65, 61, 75, 0.5)
 		font-size: 1.375em
 		font-weight: 700
@@ -397,7 +491,7 @@ li.slick-active
 		padding: 10px 30px
 .client
 	&-header
-		font-family: PlayfairDisplay
+		font-family: 'Playfair Display'
 		color:  rgba(65, 61, 75, 0.5)
 		font-size: 1.375em
 		font-weight: 700
@@ -411,9 +505,10 @@ li.slick-active
 	background: #fff url(../img/footer-bg.jpg) top center no-repeat
 	background-size: cover
 	width: 100%
-	min-height: 360px
+	min-height: 100%
 	position: relative
 	&-wrapper
+		// position: absolute
 		background: -webkit-linear-gradient(0deg, #09052f 0%, #311d5e 100%)
 		background: -moz-linear-gradient(0deg, #09052f 0%, #311d5e 100%)
 		background: -o-linear-gradient(0deg, #09052f 0%, #311d5e 100%)
@@ -430,6 +525,7 @@ li.slick-active
 		line-height: 1.733
 		text-align: left
 		text-transform: uppercase
+		padding-bottom: 2rem
 	&-about
 		font-family: Roboto
 		color:  #ffffff
@@ -514,8 +610,8 @@ li.slick-active
 		line-height: 1.857
 		text-align: right	
 
-
-@media (max-width: 960px)
+/* Small screen max-width 768px */
+@media only screen and (max-width: 768px)
 	.container-960
 		width: 100%
 	.left, .right, .bottom
@@ -539,8 +635,117 @@ li.slick-active
 	.client-header
 		text-align: center
 		padding-left: 0
+	.row-pad
+		padding: 0
+	.zara
+		padding-bottom: 1.5rem
+	.mango
+		padding-left: 15px
+		padding-bottom: 1.5rem
+	.barneys
+		padding-bottom: 1.5rem
+	.gucci
+		padding: 0
+		margin-bottom: 1.5rem
+	.ck
+		padding-bottom: 1.5rem
+		padding-left: 15px
+	.nike
+		padding-left: 0
+		margin-top: 0
+		padding-bottom: 1.5rem
+	.converse
+		padding-bottom: 1.5rem
+	.puma
+		padding-bottom: 1.5rem
+	.levis
+		padding-bottom: 1.5rem
+	.billabong
+		padding-left: 0
+		padding-bottom: 1.5rem
 	.contact-form input, .contact-form textarea
 		width: 100%
 	.contact-form
 		text-align: center
 		padding: 20px 45px
+	.footer-header
+		padding-bottom: .5rem !important
+	.footer-form
+		padding-top: .5rem
+	.footer-copy
+		text-align: left 	
+
+/* Medium screen min-width 769px and max-width 1024px */
+
+@media only screen and (min-width: 769px) and (max-width: 960px)
+	.container-960
+		width: 100%
+	.left, .right, .bottom
+		border: 0
+	.story-header, .story-about, .button-center
+		text-align: center
+	.story-image
+		display: block
+		margin: 0 auto
+	.expertise-row
+		margin-top: 1.5rem
+	.works-link
+		text-align: left
+		padding-top: .01rem
+	.works-link > img
+		padding-left: 10px
+	.testimonials
+		min-height: 450px
+	.contact-header
+		text-align: center
+	.client-header
+		text-align: center
+		padding-left: 0
+	.contact-form input, .contact-form textarea
+		width: 100%
+	.contact-form
+		text-align: center
+		padding: 20px 45px
+	.footer-header
+		padding-bottom: .5rem !important
+	.footer-form
+		padding-top: .5rem
+	.footer-copy
+		text-align: left 		
+/* Large screen min-width 1025px and max-width 1440px */    
+@media only screen and (min-width: 961px) and (max-width: 1440px)
+
+/* Extra large screens  min-width 1441px and max-width 1920px */   
+@media only screen and (min-width: 1441px) and (max-width: 1920px)
+
+/* Extra Extra large screens min-width 1921px */  
+@media only screen and (min-width: 1921px)
+	body
+		font-size: 30px
+	.container-960
+		width: 1920px
+	.team-image
+		height: 7.633em
+	.works-button
+		margin-top: 0
+	.testimonials
+		min-height: 25em
+		&-image
+			width: 100px
+			height: 100px
+	.row-1
+		padding: 3.5em 0 1.3em 0 !important
+	.row-pad
+		padding: 2em 0 0.8em 0 !important
+	.client-img
+		width: 45%
+	.footer
+		&-logo
+			width: 40%
+		&-about
+			margin-top: 1.5rem
+		&-form 
+			input
+				width: 500px
+			button
+				padding: 12px 18px

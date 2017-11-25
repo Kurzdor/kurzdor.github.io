@@ -26,31 +26,47 @@
 	</style>
 </head>
 <body>
+<div id="top-button">
+	<span class="icon-top"><i class="icon-right"></i></span>
+</div>
 <div class="preloader preloader_active">
 	<div class="wrapper" style="display: table-cell; vertical-align: middle">
 		<img class="preloader-image" src="img/preloader.svg" alt="preloader">
 	</div>
 </div>
-	<header class="header">
+<div class="navigation-mobile">
+	<ul class="navigation-mobile-menu">
+		<li class="navigation-menu-item"><span class="navigation-mobile-exit"><a class="navigation-mobile-exit">Close ×</a></span></li>
+		<li class="navigation-menu-item"><a class="slowly" href="#header">Home</a></li>
+		<li class="navigation-menu-item"><a class="slowly" href="#about">About</a></li>
+		<li class="navigation-menu-item"><a class="slowly" href="#expertise">Expertise</a></li>
+		<li class="navigation-menu-item"><a class="slowly" href="#team">Teams</a></li>
+		<li class="navigation-menu-item"><a class="slowly" href="#works">Works</a></li>
+		<li class="navigation-menu-item"><a href="#testimonials" class="slowly">People say</a></li>
+		<li class="navigation-menu-item"><a href="#contact" class="slowly">Contact</a></li>
+	</ul>
+</div>
+	<header id="header" class="header">
 		<div class="container-960">
 			<nav class="header-top">
 				<div class="row">
-					<div class="col-lg-2 col-sm-8">
+					<div class="col-lg-2 col-md-8 col-sm-8 col-xs-8">
 						<div class="header-logo">
 							<img src="img/tajam.png" alt="Logo">
 						</div>
 					</div>
-					<div class="col-lg-2" style="visibility: hidden">_</div>
-					<div class="col-lg-8 col-sm-4">
+					<div class="col-lg-2 hidden-xs hidden-sm hidden-md" style="visibility: hidden">_</div>
+					<div class="col-lg-8 col-md-4 col-sm-4 col-xs-4">
 						<ul class="header-menu hidden-xs hidden-sm hidden-md">
-							<li class="header-menu-item header-menu-item_active">Home</li>
-							<li class="header-menu-item">About</li>
-							<li class="header-menu-item">Expertise</li>
-							<li class="header-menu-item">Teams</li>
-							<li class="header-menu-item">Works</li>
-							<li class="header-menu-item">People say</li>
-							<li class="header-menu-item">Contact</li>
-						</ul>	
+							<li class="header-menu-item header-menu-item_active"><a class="slowly" href="#header">Home</a></li>
+							<li class="header-menu-item"><a class="slowly" href="#about">About</a></li>
+							<li class="header-menu-item"><a class="slowly" href="#expertise">Expertise</a></li>
+							<li class="header-menu-item"><a class="slowly" href="#team">Teams</a></li>
+							<li class="header-menu-item"><a class="slowly" href="#works">Works</a></li>
+							<li class="header-menu-item"><a href="#testimonials" class="slowly">People say</a></li>
+							<li class="header-menu-item"><a href="#contact" class="slowly">Contact</a></li>
+						</ul>
+						<a class="header-mobnav hidden-lg" href="#"><span></span></a>
 					</div>
 				</div>
 			</nav>
@@ -87,15 +103,9 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="centerize header-dots">
-				<div class="header-dot header-dot_active"></div>
-				<div class="header-dot"></div>
-				<div class="header-dot"></div>
-				<div class="header-dot"></div>
-			</div> -->
 		</div>
 	</header>
-	<section class="story">
+	<section id="about" class="story">
 		<div class="container-960">
 			<div class="row">
 				<div class="col-lg-5">
@@ -120,40 +130,40 @@
 			<p class="video-cta">watch our story</p>
 		</div>
 	</section>
-	<section class="expertise">
+	<section id="expertise" class="expertise">
 		<div class="container-960">
 			<h2 class="expertise-header">expertise</h2>
 			<p class="expertise-about">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
 			<hr class="expertise-line">
 			<div class="row expertise-row bottom">
-				<div class="col-lg-4 right">
+				<div class="col-lg-4 col-md-4 right">
 					<img class="row-image" src="img/icon-1.svg" alt="WEB DESIGN & DEVELOPMENT">
 					<h3 class="row-header">web design &amp; development</h3>
 					<p class="row-about">This is Photoshop's version  of Lorem Ipsum. <span class="blockerize">Proin gravida nibh vel velit auctor aliquet Aenean.</span></p>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4">
 					<img class="row-image" src="img/icon-2.svg" alt="BRANDING IDENTITY">
 					<h3 class="row-header" style="padding-top: .5rem">branding identity</h3>
 					<p class="row-about">This is Photoshop's version  of Lorem Ipsum. <span class="blockerize">Proin gravida nibh vel velit auctor aliquet Aenean.</span></p>
 				</div>
-				<div class="col-lg-4 left">
+				<div class="col-lg-4 col-md-4 left">
 					<img class="row-image" src="img/icon-3.svg" alt="MOBILE APP">
 					<h3 class="row-header">mobile app</h3>
 					<p class="row-about">This is Photoshop's version  of Lorem Ipsum. <span class="blockerize">Proin gravida nibh vel velit auctor aliquet Aenean.</span></p>
 				</div>
 			</div>
 			<div class="row expertise-row-2">
-				<div class="col-lg-4 right">
+				<div class="col-lg-4 col-md-4 right">
 					<img class="row-image" src="img/icon-4.svg" alt="SEARCH ENGINE OPTIMIZATION">
 					<h3 class="row-header">search engine optimization</h3>
 					<p class="row-about">This is Photoshop's version  of Lorem Ipsum. <span class="blockerize">Proin gravida nibh vel velit auctor aliquet Aenean.</span></p>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4">
 					<img class="row-image" src="img/icon-5.svg" alt="GAME DEVELOPMENT">
 					<h3 class="row-header">game development</h3>
 					<p class="row-about">This is Photoshop's version  of Lorem Ipsum. <span class="blockerize">Proin gravida nibh vel velit auctor aliquet Aenean.</span></p>
 				</div>
-				<div class="col-lg-4 left">
+				<div class="col-lg-4 col-md-4 left">
 					<img class="row-image" src="img/icon-6.svg" alt="MADE WITH LOVE">
 					<h3 class="row-header">made with love</h3>
 					<p class="row-about">This is Photoshop's version  of Lorem Ipsum. <span class="blockerize">Proin gravida nibh vel velit auctor aliquet Aenean.</span></p>
@@ -161,7 +171,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="team">
+	<section id="team" class="team">
 		<div class="container-960">
 			<h4 class="team-header">meet our amazing team</h4>
 			<p class="team-about">Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
@@ -200,7 +210,7 @@
 			<div class="button-center" style="text-align: center"><a href="#"><button class="team-button">we are hiring</button></a>
 		</div>
 	</section>
-	<section class="works">
+	<section id="works" class="works">
 		<div class="container-960">
 			<div class="row">
 				<div class="col-lg-6"><h4 class="works-heading">our works</h4></div>
@@ -228,7 +238,7 @@
 		</div>
 	</section>
 
-	<section class="testimonials">
+	<section id="testimonials" class="testimonials">
 		<div class="testimonials-wrap">
 			<div class="container-960">
 				<div class="slider">
@@ -271,10 +281,10 @@
 			</div>
 		</div>
 	</section>
-	<section class="con-client">
+	<section id="contact" class="con-client">
 		<div class="container-960">
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<h4 class="contact-header">give us good news</h4>
 					<form style="padding: 0 0 2rem 0" class="contact-form" id="form" action="GET" required>
 						<input type="text" placeholder="Name" required="required">
@@ -287,27 +297,27 @@
 						<button class="contact-button" type="submit" form="form" value="submit">submit</button>
 					</form>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<h4 class="client-header">our happy client</h4>
-					<div class="row" style="padding: 1.5rem 0 0.8rem 0">
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"><img src="img/zara.svg" alt="Zara Logo" class="client-img"></div>
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"><img src="img/mango.svg" alt="Mango Logo" style="padding-left: 15px" class="client-img"></div>
+					<div class="row row-1">
+						<div class="col-lg-6 col-md-6 col-sm-6 zara"><img src="img/zara.svg" alt="Zara Logo" class="client-img"></div>
+						<div class="col-lg-6 col-md-6 col-sm-6 mango"><img src="img/mango.svg" alt="Mango Logo" class="client-img"></div>
 					</div>
-					<div class="row" style="padding: 2rem 0 0.8rem 0">
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"><img src="img/barneys.svg" alt="Barneys Logo" class="client-img"></div>
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"><img src="img/we_are_gucci.svg" alt="Gucci Logo" class="client-img" style="padding-top: 8px; padding-left: 15px"></div>
+					<div class="row row-pad">
+						<div class="col-lg-6 col-md-6 col-sm-6 barneys"><img src="img/barneys.svg" alt="Barneys Logo" class="client-img"></div>
+						<div class="col-lg-6 col-md-6 col-sm-6 gucci"><img src="img/we_are_gucci.svg" alt="Gucci Logo" class="client-img"></div>
 					</div>
-					<div class="row" style="padding: 2rem 0 0.8rem 0">
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"><img src="img/calvkl.svg" alt="Calvin Klein Logo" class="client-img"></div>
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"><img src="img/nike.svg" alt="Nike Logo" style="padding-left: 35px; margin-top: -5px;" class="client-img"></div>
+					<div class="row row-pad">
+						<div class="col-lg-6 col-md-6 col-sm-6 ck"><img src="img/calvkl.svg" alt="Calvin Klein Logo" class="client-img"></div>
+						<div class="col-lg-6 col-md-6 col-sm-6"><img src="img/nike.svg" alt="Nike Logo" class="client-img nike"></div>
 					</div>
-					<div class="row" style="padding: 2rem 0 0.8rem 0">
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"><img src="img/converse.svg" alt="Converse Logo"  class="client-img"></div>
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"><img src="img/puma.svg" alt="Puma Logo" style="padding-left: 20px" class="client-img"></div>
+					<div class="row row-pad">
+						<div class="col-lg-6 col-md-6 col-sm-6 converse"><img src="img/converse.svg" alt="Converse Logo"  class="client-img"></div>
+						<div class="col-lg-6 col-md-6 col-sm-6 puma"><img src="img/puma.svg" alt="Puma Logo" class="client-img"></div>
 					</div>
-					<div class="row" style="padding: 2rem 0 0.8rem 0">
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"><img src="img/levis.svg" alt="Levis Logo" style="padding-top: 8px" class="client-img"></div>
-						<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6"><img src="img/billabong.svg" alt="Billabong Logo" style="padding-left: 20px" class="client-img"></div>
+					<div class="row row-pad">
+						<div class="col-lg-6 col-md-6 col-sm-6 levis"><img src="img/levis.svg" alt="Levis Logo" class="client-img"></div>
+						<div class="col-lg-6 col-md-6 col-sm-6 billabong"><img src="img/billabong.svg" alt="Billabong Logo" class="client-img"></div>
 					</div>
 				</div>
 			</div>
@@ -317,17 +327,17 @@
 		<div class="footer-wrapper">
 			<div class="container-960">
 				<div class="row" style="padding-top: 1.5rem">
-					<div class="col-lg-4">
-						<img src="img/tajam.png" alt="Tajam logo">
+					<div class="col-lg-4 col-md-4 col-md-4">
+						<img class="footer-logo" src="img/tajam.png" alt="Tajam logo">
 						<p class="footer-about">lorem quis bibendum auctor, nisi elit <br> consequat ipsum, nec sagittis sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit</p>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 col-md-4 col-md-4">
 						<h5 class="footer-header" style="padding-bottom: 2rem">our studio</h5>
 						<i style="color: white; font-size: 1.2em" class="icon-location"></i><p class="footer-location">Ruko cucruk, Jl. Radio luar dalem jos <br> No.12 - 13, Kalideres - Jakarta Barat <br> 11480 - Indonesia</p>
 						<br>
 						<i style="color: white" class="icon-phone"></i><p class="footer-phone">(+62) 21-2224 3333</p>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-4 col-md-4 col-md-4">
 						<h5 class="footer-header">stay in touch</h5>
 						<form id="ff" class="footer-form" action="#">
 							<input type="email" placeholder="Subscribe to our newsletter" required>
