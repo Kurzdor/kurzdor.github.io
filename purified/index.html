@@ -47,29 +47,6 @@
     </div>
 
     <header class="header">
-
-        <div class="mobile">
-
-            <ul class="mobile-navigation">
-
-                <li class="mobile-navigation__item"><a href="#" class="mobile-navigation__item-close">&times;</a></li>
-                    
-                <li class="mobile-navigation__item"><a href="#" class="mobile-navigation__item-link">Home</a></li>                        
-                <li class="mobile-navigation__item"><a href="#" class="mobile-navigation__item-link">About</a></li>
-                        
-                <li class="mobile-navigation__item"><a href="#" class="mobile-navigation__item-link">Team</a></li>
-                        
-                <li class="mobile-navigation__item"><a href="#" class="mobile-navigation__item-link">Services</a></li>
-                        
-                <li class="mobile-navigation__item"><a href="#" class="mobile-navigation__item-link">Work</a></li>
-                        
-                <li class="mobile-navigation__item"><a href="#" class="mobile-navigation__item-link">Clients</a></li>
-                        
-                <li class="mobile-navigation__item"><a href="#" class="mobile-navigation__item-link">Contact</a></li>
-                        
-            </ul>
-
-        </div>    
         
         <div class="header__overlay">
             
@@ -137,6 +114,76 @@
 
     </header>
 
+    <section class="about">
+
+        <div class="about-inner">
+
+            <div class="about-content">
+
+                <h2 class="about-content__main">About us.</h2>
+
+                <p class="about-content__paragraph">Pura comes with 11 unique and stunning demos. We have crafted
+                        each and every demo with extensive care and precision and the 
+                        theme is power packed yet easy to use.</p>
+
+                <div class="about-content-wrapper"><a href="#" class="about-content__link">Portfolio. <i class="about-content__link-icon icon-r" aria-hidden="true"></i></a></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="process">
+
+        <div class="process-inner">
+
+            <div class="process-block">
+
+                <span class="process-block__number-background">01</span>
+
+                <span class="process-block__number">01</span>
+
+                <h3 class="process-block__heading">Awesome Design</h3>
+
+                <p class="process-block__paragraph">Proin facilisis varius nunc. Curabitur eros risus,
+                        ultrices et dui ut, luctus accumsan nibh. Fusce
+                        convallis sapien placerat tellus suscipit vehicula.</p>
+
+            </div>
+
+            <div class="process-block">
+
+                <span class="process-block__number-background">02</span>
+
+                <span class="process-block__number">02</span>
+
+                <h3 class="process-block__heading">New Ideas</h3>
+                
+                <p class="process-block__paragraph">Proin facilisis varius nunc. Curabitur eros risus,
+                        ultrices et dui ut, luctus accumsan nibh. Fusce
+                        convallis sapien placerat tellus suscipit vehicula.</p>
+
+            </div>
+
+            <div class="process-block">
+
+                <span class="process-block__number-background">03</span>
+
+                <span class="process-block__number">03</span>
+
+                <h3 class="process-block__heading">Trending</h3>
+                
+                <p class="process-block__paragraph">Proin facilisis varius nunc. Curabitur eros risus,
+                        ultrices et dui ut, luctus accumsan nibh. Fusce
+                        convallis sapien placerat tellus suscipit vehicula.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script>
         (function() {
@@ -163,13 +210,13 @@
 
         $(document).ready(function () {
             $('.header__top-mobile').click(function() {
-                $('.mobile').toggleClass('mobile--not-hidden');
+                $('.mobile').toggleClass('mobile--visible');
             });
             $('.mobile-navigation__item a').click(function() {
-                $('.mobile').toggleClass('mobile--not-hidden');
+                $('.mobile').toggleClass('mobile--visible');
             });
             $('.mobile-navigation__close').click(function() {
-                $('.mobile').toggleClass('mobile--not-hidden');
+                $('.mobile').toggleClass('mobile--visible');
             });
         });
 
