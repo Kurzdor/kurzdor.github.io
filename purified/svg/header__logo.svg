@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="102px" height="43px" viewBox="0 0 102 43">
+<style type="text/css"><![CDATA[
+.style0 {
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: 700;
+  fill: rgb(255,255,255);
+}
+.style1 {
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 400;
+  fill: rgb(255,255,255);
+}
+]]></style>
+<text transform="translate(-3.00,21.00)" class="style0"><tspan x="1.19 15.50 30.83 39.29" fill="rgb(255,255,255)">Pura</tspan></text><text transform="translate(103.00,38.00)" class="style1"><tspan x="-59.96 -49.88 -40.53 -32.24 -22.97 -15.30 -7.54 -4.45" fill="rgb(255,255,255)">Agency .</tspan></text></svg>

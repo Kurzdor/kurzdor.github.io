@@ -1,0 +1,405 @@
+// Variables
+$second-color: #fd3e4f
+
+$main-font: 'Poppins', sans-serif
+$sub-font: 'Playfair Display', serif
+
+// Global styles
+
+.poppins
+
+  font-family: $main-font
+
+.playfair
+
+  font-family: $sub-font
+
+html
+
+  font-size: 10px
+
+body
+
+  color: #fff
+
+  @extend .poppins
+
+a, a:hover
+
+  transition: ease 0.8s
+
+// Page styles
+
+.mobile
+
+  position: fixed
+
+  right: 0
+
+  z-index: 1001
+
+  background-color: $second-color
+
+  display: flex
+
+  justify-content: center
+
+  align-items: center
+
+  width: 50vw
+
+  height: 100vh
+
+  transform: translateX(100%)
+
+  &--not-hidden
+
+    transform: translateX(0%)
+
+  &-navigation
+
+    margin: 0
+
+    padding: 0
+
+    width: 100%
+
+    height: 50vh
+
+    display: flex
+    
+    flex-direction: column
+    
+    align-items: center
+    
+    justify-content: space-between
+    
+    list-style: none
+
+    &__item
+
+      font-size: 3rem
+
+      &-link
+
+        color: #fff
+
+        text-decoration: none
+
+        &:hover
+
+          &:before
+
+            display: inline-block
+
+            content: ''
+
+            width: 2px
+
+            height: 22px
+
+            background-color: #fff
+
+            margin-right: 20px
+
+            transform: rotate(10deg)
+
+          &:after
+
+            display: inline-block
+
+            content: ''
+
+            width: 2px
+
+            height: 22px
+
+            background-color: #fff
+
+            margin-left: 20px
+
+            transform: rotate(10deg)
+
+    &__close
+
+      font-size: 3rem
+
+.header
+
+  background: #fff url(../img/header-bg.jpg) top center no-repeat
+
+  background-size: cover
+
+  position: relative
+
+  z-index: 0
+
+  &__overlay
+
+    display: flex
+
+    flex-direction: column
+
+    justify-content: space-between
+
+    flex-wrap: wrap
+
+    background-color: rgba(0, 0, 0, 0.7)
+
+    width: 100%
+
+    height: 100%
+
+    z-index: 1
+
+  &__inner
+
+    width: 100%
+
+    margin: 0 auto
+
+  &__top
+
+    display: flex
+
+    justify-content: space-between
+
+    align-items: center
+
+    height: 115px
+
+    padding: 0 15px
+
+    &-logo
+
+      width: calc((100%/12) * 2)
+
+    &-navigation
+
+      width: calc((100%/12) * 8)
+
+      list-style-type: none
+
+      display: flex
+
+      justify-content: space-between
+
+      flex-wrap: wrap
+
+      &-item
+
+        font-size: 1.6rem
+
+        &-link
+
+          color: #fff !important
+
+          text-decoration: none !important
+
+          &:hover
+
+            color: $second-color !important
+
+            text-decoration: underline !important
+
+    &-socials
+
+      width: calc((100%/12) * 2)
+
+      list-style-type: none
+
+      display: flex
+
+      justify-content: flex-end
+
+      &-item
+
+        font-size: 2rem
+
+        margin-left: 20px
+
+        &-link
+
+          color: #fff !important
+
+          &:hover
+
+            color: $second-color !important
+    
+    &-mobile
+      
+      display: none
+
+      width: 30px
+
+      height: 30px
+
+      &-line
+
+        display: block
+
+        content: ''
+
+        width: 30px
+
+        height: 3px
+
+        position: relative
+        
+        top: 50%
+
+        background-color: #fff
+
+        &:before
+
+          display: block
+
+          content: ''
+
+          width: 30px
+
+          height: 3px
+
+          background-color: #fff
+
+          transform: translateY(-8px)
+
+        &:after
+
+          display: block
+
+          content: ''
+
+          width: 30px
+
+          height: 3px
+
+          background-color: #fff
+
+          transform: translateY(5px)
+
+  &__content
+
+    width: 90%
+
+    padding: 50px 0
+
+    display: flex
+
+    flex-direction: column
+
+    align-items: center
+
+    justify-content: center
+
+    text-align: center
+
+    margin: 0 auto
+
+    &-main
+
+      font-size: 2.5rem
+
+      line-height: 1.2
+
+      &-span
+
+        @extend .playfair
+
+    &-paragraph
+
+      font-size: 5rem
+
+      font-weight: 700
+
+      line-height: 1.2
+
+      margin-bottom: 0
+
+  &__button
+
+    padding: 25px 0
+
+    display: flex
+
+    justify-content: center
+
+    align-items: flex-start
+
+    &-link
+
+      padding: 20px 47px
+
+      color: #fff
+
+      font-size: 1.629rem
+
+      text-decoration: none
+
+      border: 1px solid transparent
+
+      background: linear-gradient(45deg, #fd3fb3 0%, #fd3f81 30%, #fd3e4f 79%)
+
+      &:hover
+
+        color: $second-color
+
+        background: transparent
+
+        border: 1px solid $second-color
+
+@media only screen and (max-width: 992px)
+
+  .header
+
+    &__top
+
+        &-navigation
+
+          display: none
+
+        &-socials
+
+          display: none
+
+        &-mobile
+
+          display: block
+
+@media only screen and (max-width: 800px) 
+
+  .header
+
+    &__content
+
+      &-paragraph
+
+        font-size: 4rem
+
+// Media queries for rows
+
+@media (min-width: 576px)
+  
+  .header__inner
+  
+    max-width: 540px
+
+@media (min-width: 768px)
+
+  .header
+    
+    &__inner
+    
+      max-width: 720px
+
+@media (min-width: 992px)
+  
+  .header__inner
+  
+    max-width: 960px
+
+@media (min-width: 1200px)
+  
+  .header__inner
+  
+    max-width: 1140px
