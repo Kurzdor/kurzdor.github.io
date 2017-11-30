@@ -23,8 +23,10 @@ a, a:hover {
   align-items: center;
   width: 50vw;
   height: 100vh;
-  transform: translateX(100%); }
+  transform: translateX(100%);
+  transition: ease 0.5s; }
   .mobile--not-hidden {
+    transition: ease 0.5s;
     transform: translateX(0%); }
   .mobile-navigation {
     margin: 0;
