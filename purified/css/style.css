@@ -4,7 +4,7 @@
 .poppins, body {
   font-family: "Poppins", sans-serif; }
 
-.playfair, .header__content-main-span, .process-block__paragraph {
+.playfair, .header__content-main-span, .process-block__paragraph, .team-img-info__pos, .team-list-block__pos {
   font-family: "Playfair Display", serif; }
 
 html {
@@ -262,28 +262,63 @@ a, a:hover {
   justify-content: space-between;
   align-items: center; }
   .team-list-block:hover .team-img-info {
-    display: flex; }
+    opacity: 0.8; }
+  .team-list-block:hover .team-list-block__name {
+    opacity: 0; }
+  .team-list-block:hover .team-list-block__pos {
+    opacity: 0; }
 .team-img {
   position: relative; }
   .team-img-info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: none;
+    display: flex;
     width: 100%;
     height: 100%;
     position: absolute;
     background: linear-gradient(0deg, #fd3fb3 0%, #fd3f81 30%, #fd3e4f 79%);
-    opacity: 0.8;
+    opacity: 0;
     border: none;
     border-radius: 5px;
     top: 0;
     left: 0; }
+    .team-img-info__name {
+      margin: 0;
+      font-size: 2rem;
+      padding-bottom: 30px;
+      font-weight: 700; }
+    .team-img-info__pos {
+      font-size: 1.6rem;
+      margin: 0;
+      padding-bottom: 30px; }
     .team-img-info-socials {
       margin: 0;
       padding: 0;
       list-style: none;
       display: flex; }
+      .team-img-info-socials__item {
+        font-size: 2rem;
+        margin-left: 10px; }
+        .team-img-info-socials__item:first-child {
+          margin-left: 0; }
+        .team-img-info-socials__item-link {
+          color: #fff;
+          padding: 5px;
+          border-bottom: 1px solid transparent;
+          border-radius: 50%; }
+          .team-img-info-socials__item-link:hover {
+            border-bottom: 1px solid #fff; }
+.team-list-block__name {
+  text-align: center;
+  color: #222;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 20px; }
+.team-list-block__pos {
+  font-size: 1.6rem;
+  color: #9a9a9a;
+  text-align: center; }
 
 @media only screen and (max-width: 992px) {
   .header__top-navigation {
@@ -294,6 +329,9 @@ a, a:hover {
     display: block; }
 
   .process-inner {
+    flex-direction: column; }
+
+  .team-list {
     flex-direction: column; } }
 @media only screen and (max-width: 800px) {
   .mobile-navigation__item, .mobile-navigation__close {

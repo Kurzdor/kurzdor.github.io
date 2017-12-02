@@ -528,7 +528,15 @@ a, a:hover
 
     &-block:hover .team-img-info
 
-      display: flex
+      opacity: 0.8
+
+    &-block:hover .team-list-block__name
+
+      opacity: 0
+
+    &-block:hover .team-list-block__pos
+
+      opacity: 0
 
   &-img
 
@@ -542,7 +550,7 @@ a, a:hover
 
       align-items: center
 
-      display: none
+      display: flex
 
       width: 100%
 
@@ -552,7 +560,7 @@ a, a:hover
 
       background: linear-gradient(0deg, #fd3fb3 0%, #fd3f81 30%, #fd3e4f 79%)
 
-      opacity: 0.8
+      opacity: 0
 
       border: none
 
@@ -561,6 +569,26 @@ a, a:hover
       top: 0  
 
       left: 0
+
+      &__name
+
+        margin: 0
+
+        font-size: 2rem
+
+        padding-bottom: 30px
+
+        font-weight: 700
+
+      &__pos
+
+        @extend .playfair
+
+        font-size: 1.6rem
+
+        margin: 0
+
+        padding-bottom: 30px
 
       &-socials
 
@@ -571,6 +599,55 @@ a, a:hover
         list-style: none
 
         display: flex
+
+        &__item
+
+          font-size: 2rem
+
+          margin-left: 10px
+
+          &:first-child
+
+            margin-left: 0
+
+          &-link
+
+            color: #fff
+
+            padding: 5px
+
+            border-bottom: 1px solid transparent
+
+            border-radius: 50%
+
+            &:hover
+
+              border-bottom: 1px solid #fff
+
+  &-list-block__name
+
+    text-align: center
+
+    color: $black-text
+
+    font-size: 2rem
+
+    font-weight: 700
+
+    margin-top: 20px
+
+  &-list-block__pos
+
+    @extend .playfair
+
+    font-size: 1.6rem
+
+    color: #9a9a9a
+
+    text-align: center
+
+    
+
 
 @media only screen and (max-width: 992px)
 
@@ -591,6 +668,10 @@ a, a:hover
           display: block
 
   .process-inner
+
+    flex-direction: column
+
+  .team-list
 
     flex-direction: column
 
