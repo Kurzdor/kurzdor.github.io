@@ -1,6 +1,3 @@
-* {
-  transition: ease-in-out 0.5s; }
-
 .poppins, body {
   font-family: "Poppins", sans-serif; }
 
@@ -16,6 +13,30 @@ body {
 a, a:hover {
   transition: ease 0.8s; }
 
+.preloader {
+  display: block;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+  background-color: #fd3e4f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  transition: ease-in-out 0.5s; }
+  .preloader--hidden {
+    opacity: 0;
+    z-index: -1; }
+  .preloader__loader {
+    width: 10rem;
+    height: 10rem;
+    border: 5px solid #fff;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-radius: 50%;
+    animation: spin360 1s infinite cubic-bezier(0.3, 0.76, 0.71, 0.32); }
+
 .mobile {
   position: fixed;
   right: 0;
@@ -26,10 +47,8 @@ a, a:hover {
   align-items: center;
   width: 100%;
   height: 100vh;
-  transform: translateX(100%);
-  transition: ease 0.5s; }
+  transform: translateX(100%); }
   .mobile--visible {
-    transition: ease 0.5s;
     transform: translateX(0%); }
   .mobile-navigation {
     margin: 0;
@@ -208,6 +227,8 @@ a, a:hover {
       .about-content__link-icon {
         margin-left: 25px; }
 
+.process * {
+  transition: ease-in-out 0.5s; }
 .process-inner {
   display: flex;
   justify-content: space-around;
@@ -249,6 +270,8 @@ a, a:hover {
       color: #fff;
       padding-bottom: 70px; }
 
+.team * {
+  transition: ease-in-out 0.5s; }
 .team-inner {
   width: 100%;
   margin: 0 auto; }
@@ -358,5 +381,10 @@ a, a:hover {
 @media (min-width: 1200px) {
   .header__inner, .about-inner, .process-inner, .team-inner {
     max-width: 1140px; } }
+@keyframes spin360 {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(359deg); } }
 
 /*# sourceMappingURL=style.css.map */

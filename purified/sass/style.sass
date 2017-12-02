@@ -8,10 +8,6 @@ $sub-font: 'Playfair Display', serif
 
 // Global styles
 
-*
-
-  transition: ease-in-out 0.5s
-
 .poppins
 
   font-family: $main-font
@@ -36,6 +32,52 @@ a, a:hover
 
 // Page styles
 
+.preloader
+
+  display: block
+
+  position: fixed
+
+  right: 0
+
+  z-index: 1000
+
+  background-color: $second-color
+
+  display: flex
+
+  justify-content: center
+
+  align-items: center
+
+  width: 100%
+
+  height: 100vh
+
+  transition: ease-in-out .5s
+
+  &--hidden
+
+    opacity: 0
+
+    z-index: -1
+
+  &__loader
+
+    width: 10rem
+
+    height: 10rem
+
+    border: 5px solid #fff
+
+    border-top: 5px solid transparent
+
+    border-right: 5px solid transparent
+
+    border-radius: 50%
+
+    animation: spin360 1s infinite cubic-bezier(0.3, 0.76, 0.71, 0.32)
+
 .mobile
 
   position: fixed
@@ -58,11 +100,7 @@ a, a:hover
 
   transform: translateX(100%)
 
-  transition: ease .5s
-
   &--visible
-
-    transition: ease .5s
 
     transform: translateX(0%)
 
@@ -418,6 +456,10 @@ a, a:hover
 
 .process
 
+  *
+
+    transition: ease-in-out .5s
+
   &-inner
 
     display: flex
@@ -501,6 +543,10 @@ a, a:hover
         padding-bottom: 70px
 
 .team
+
+  *
+
+    transition: ease-in-out .5s
 
   &-inner
 
@@ -732,3 +778,10 @@ a, a:hover
   .header__inner, .about-inner, .process-inner, .team-inner
   
     max-width: 1140px
+
+
+@keyframes spin360
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(359deg)
