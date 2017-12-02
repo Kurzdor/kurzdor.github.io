@@ -10,7 +10,7 @@ $sub-font: 'Playfair Display', serif
 
 *
 
-  transition: ease 0.5s
+  transition: ease-in-out 0.5s
 
 .poppins
 
@@ -373,6 +373,8 @@ a, a:hover
     margin: 0 auto
 
   &-content
+  
+    padding: 0 15px
 
     &__main
 
@@ -498,17 +500,77 @@ a, a:hover
 
         padding-bottom: 70px
 
+.team
 
+  &-inner
 
-      
+    width: 100%
 
+    margin: 0 auto
 
+    &__main
 
+      padding: 85px 0
 
+      margin: 0
 
+      font-size: 4rem
 
+      color: $black-text
+  
+  &-list
 
+    display: flex
 
+    justify-content: space-between
+
+    align-items: center
+
+    &-block:hover .team-img-info
+
+      display: flex
+
+  &-img
+
+    position: relative
+
+    &-info
+
+      flex-direction: column
+
+      justify-content: center
+
+      align-items: center
+
+      display: none
+
+      width: 100%
+
+      height: 100%
+
+      position: absolute
+
+      background: linear-gradient(0deg, #fd3fb3 0%, #fd3f81 30%, #fd3e4f 79%)
+
+      opacity: 0.8
+
+      border: none
+
+      border-radius: 5px
+
+      top: 0  
+
+      left: 0
+
+      &-socials
+
+        margin: 0
+
+        padding: 0
+
+        list-style: none
+
+        display: flex
 
 @media only screen and (max-width: 992px)
 
@@ -550,24 +612,24 @@ a, a:hover
 
 @media (min-width: 576px)
   
-  .header__inner, .about-inner, .process-inner
+  .header__inner, .about-inner, .process-inner, .team-inner
   
     max-width: 540px
 
 @media (min-width: 768px)
 
-  .header__inner, .about-inner, .process-inner
+  .header__inner, .about-inner, .process-inner, .team-inner
     
       max-width: 720px
 
 @media (min-width: 992px)
   
-  .header__inner, .about-inner, .process-inner
+  .header__inner, .about-inner, .process-inner, .team-inner
   
     max-width: 960px
 
 @media (min-width: 1200px)
   
-  .header__inner, .about-inner, .process-inner
+  .header__inner, .about-inner, .process-inner, .team-inner
   
     max-width: 1140px
