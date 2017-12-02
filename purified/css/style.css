@@ -269,6 +269,9 @@ a, a:hover {
     opacity: 0; }
 .team-img {
   position: relative; }
+  .team-img__person {
+    display: block;
+    width: 100%; }
   .team-img-info {
     flex-direction: column;
     justify-content: center;
@@ -318,7 +321,8 @@ a, a:hover {
 .team-list-block__pos {
   font-size: 1.6rem;
   color: #9a9a9a;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 10px; }
 
 @media only screen and (max-width: 992px) {
   .header__top-navigation {
@@ -339,6 +343,9 @@ a, a:hover {
 
   .header__content-paragraph {
     font-size: 4rem; } }
+@media only screen and (max-width: 280px) {
+  .header__content-paragraph {
+    font-size: 3rem; } }
 @media (min-width: 576px) {
   .header__inner, .about-inner, .process-inner, .team-inner {
     max-width: 540px; } }

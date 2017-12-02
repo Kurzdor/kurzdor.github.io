@@ -542,6 +542,12 @@ a, a:hover
 
     position: relative
 
+    &__person
+
+      display: block
+
+      width: 100%
+
     &-info
 
       flex-direction: column
@@ -646,6 +652,8 @@ a, a:hover
 
     text-align: center
 
+    padding-bottom: 10px
+
     
 
 
@@ -688,6 +696,16 @@ a, a:hover
       &-paragraph
 
         font-size: 4rem
+
+@media only screen and (max-width: 280px) 
+
+  .header
+
+    &__content
+
+      &-paragraph
+
+        font-size: 3rem
 
 // Media queries for rows
 
