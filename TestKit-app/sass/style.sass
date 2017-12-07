@@ -1,0 +1,157 @@
+// Fonts - Tele2
+
+// @font-face
+//     font-family: 'Tele2 DisplaySerif'
+//     src: url('Tele2DisplaySerif-Bold.eot')
+//     src: url('Tele2DisplaySerif-Bold.eot?#iefix') format('embedded-opentype'), url('Tele2DisplaySerif-Bold.woff2') format('woff2'), url('Tele2DisplaySerif-Bold.woff') format('woff'), url('Tele2DisplaySerif-Bold.ttf') format('truetype'), url('Tele2DisplaySerif-Bold.svg#Tele2DisplaySerif-Bold') format('svg')
+//     font-weight: bold
+//     font-style: normal
+
+// @font-face
+//     font-family: 'Tele2 DisplayStencil'
+//     src: url('Tele2DisplayStencil-Regular.eot')
+//     src: url('Tele2DisplayStencil-Regular.eot?#iefix') format('embedded-opentype'), url('Tele2DisplayStencil-Regular.woff2') format('woff2'), url('Tele2DisplayStencil-Regular.woff') format('woff'), url('Tele2DisplayStencil-Regular.ttf') format('truetype'), url('Tele2DisplayStencil-Regular.svg#Tele2DisplayStencil-Regular') format('svg')
+//     font-weight: normal
+//     font-style: normal
+
+@font-face
+    font-family: 'Tele2 TextSans'
+    src: url('../fonts/Tele2TextSans-Regular.eot')
+    src: url('../fonts/Tele2TextSans-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Tele2TextSans-Regular.woff2') format('woff2'), url('../fonts/Tele2TextSans-Regular.woff') format('woff'), url('../fonts/Tele2TextSans-Regular.ttf') format('truetype'), url('../fonts/Tele2TextSans-Regular.svg#Tele2TextSans-Regular') format('svg')
+    font-weight: normal
+    font-style: normal
+
+@font-face
+    font-family: 'Tele2 TextSans'
+    src: url('Tele2TextSans-Bold.eot')
+    src: url('Tele2TextSans-Bold.eot?#iefix') format('embedded-opentype'), url('Tele2TextSans-Bold.woff2') format('woff2'), url('Tele2TextSans-Bold.woff') format('woff'), url('Tele2TextSans-Bold.ttf') format('truetype'), url('Tele2TextSans-Bold.svg#Tele2TextSans-Bold') format('svg')
+    font-weight: bold
+    font-style: normal
+
+@font-face
+    font-family: 'Tele2 DisplaySerif'
+    src: url('../fonts/Tele2DisplaySerif-Regular.eot')
+    src: url('../fonts/Tele2DisplaySerif-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Tele2DisplaySerif-Regular.woff2') format('woff2'), url('../fonts/Tele2DisplaySerif-Regular.woff') format('woff'), url('../fonts/Tele2DisplaySerif-Regular.ttf') format('truetype'), url('../fonts/Tele2DisplaySerif-Regular.svg#Tele2DisplaySerif-Regular') format('svg')
+    font-weight: normal
+    font-style: normal
+
+// Variables
+
+$main-color: #ff4848
+$secondary-color: #29c1c1
+$footer-text: #999999
+
+$base-font: 16
+
+// Functions
+
+@function strip-unit($num) 
+    @return $num / ($num * 0 + 1)
+
+
+@function trem($num)
+    @return strip-unit($num) / $base-font * 1rem
+
+
+// Global styles
+
+.t-tsreg
+    font-family: 'Tele2 TextSans'
+    font-weight: 400
+
+.t-tsbold
+    font-family: 'Tele2 TextSans'
+    font-weight: 700
+
+.t-ds
+    font-family: 'Tele2 DisplaySerif'
+    font-weight: 400
+
+// Page styles
+
+.t-mainPage
+    position: relative
+    height: calc(100vh - 70px) 
+    margin: trem(35px)
+    background-color: #fff
+
+    &__bg
+        position: absolute
+        width: 100%
+        height: 100%
+        background: url("../img/mainPage-background.jpg") center no-repeat 
+        background-size: 100% 100%
+
+.t-header
+    position: relative
+    height: trem(71px)
+    margin: -2.5rem 0 0 -2.5rem
+
+    &__link
+        position: absolute
+        left: trem(70px)
+        z-index: 1
+        background-color: #000
+        width: trem(120px)
+        height: trem(71px)
+
+        &-logo
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translateX(-50%) translateY(-50%)
+            width: trem(90px)
+            height: trem(45px)
+
+
+.t-main
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &-content
+        background-color: $main-color
+        padding: trem(20px) trem(30px)
+        width: 500px
+        margin: 0 auto
+        text-align: center
+
+    &__heading
+        @extend .t-ds
+        font-size: trem(34px)
+        color: #fff
+
+    &__text
+        margin-top: trem(22px)
+        @extend .t-tsreg
+        font-size: trem(15px)
+        color: #fff
+
+    &-form__phone
+        display: inline-block
+        margin-top: trem(33px)
+        min-width: 280px
+        padding: 1rem 2rem
+        background-color: transparent
+        border: none
+        border-bottom: 3px solid #fff
+        font-size: trem(28px)
+    
+    &-form__terms-accept
+        display: inline-block
+
+    &-form__button
+        display: block
+
+
+
+    
+@media only screen and (max-width: 1100px)
+    
+    .t-mainPage__bg
+        background-size: cover

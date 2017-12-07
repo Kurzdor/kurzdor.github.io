@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="">
+ 
+    <title>У нас день рождения! - Tele2</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+    <div class="t-mainPage">
+
+        <div class="t-mainPage__bg">
+
+            <header class="t-header">
+                <a href="#" class="t-header__link"><img src="svg/header__logo.svg" alt="Оператор Теле 2" class="t-header__link-logo"></a>
+            </header>
+
+            <main class="t-main">
+                <div class="t-main-content">
+                    <h1 class="t-main__heading">Сегодня у нас День рождения!</h1>
+                    <div class="t-main__text">По этому случаю у нас для вас подарок.<br> Спасибо, что все это время вы с нами.</div>
+                    <form class="t-main-form" id="t-main-form" action="#" method="get">
+                        <input class="t-main-form__phone" type="tel" name="tel" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\(]\d{3}[\)]" required>
+                        <br>
+                        <input type="checkbox" class="t-main-form__terms-accept" name="terms-accept" id="terms-accept">
+                        <label for="terms-accept">Я соглашаюсь и принимаю условия <a href="#">акции</a></label>
+                        <button form="t-main-form" class="t-main-form__button" type="submit"></button>
+                    </form>
+                </div>
+            </main>
+
+        </div>
+        
+    </div>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script>
+        (function() {
+            'use strict'
+
+            if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+                var msViewportStyle = document.createElement('style')
+                msViewportStyle.appendChild(
+                    document.createTextNode(
+                        '@-ms-viewport{width:auto!important}'
+                    )
+                )
+                document.head.appendChild(msViewportStyle)
+            }
+
+        }())
+    </script>
+
+</body>
+</html>
