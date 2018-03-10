@@ -1964,6 +1964,26 @@ body::after {
   display: none;
 }
 
+::-webkit-scrollbar {
+  width: 0.3125rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00a8b2;
+  border-radius: 0.625rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #006066;
+}
+
 .t-container {
   width: 1200px;
   max-width: 100%;
@@ -1974,10 +1994,41 @@ body::after {
   height: inherit;
 }
 
+.t-main {
+  position: relative;
+}
+
+.t-main .t-container {
+  position: relative;
+  z-index: 5;
+}
+
+.t-main__decor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 60%;
+  height: 141%;
+  background-color: #f0f8fe;
+}
+
 [data-aos=fade-left] {
   -webkit-transform: translate(-132%);
       -ms-transform: translate(-132%);
           transform: translate(-132%);
+}
+
+[data-aos=slide-up].t-main__decor {
+  -webkit-transform: translate(0);
+      -ms-transform: translate(0);
+          transform: translate(0);
+}
+
+[data-aos^=slide][data-aos^=slide].aos-animate.t-main__decor {
+  -webkit-transform: translate(0, -45%);
+      -ms-transform: translate(0, -45%);
+          transform: translate(0, -45%);
 }
 
 [data-aos^=fade][data-aos^=fade].aos-animate.t-video__container {
