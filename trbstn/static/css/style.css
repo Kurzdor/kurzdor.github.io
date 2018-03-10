@@ -2009,7 +2009,7 @@ body::after {
   right: 0;
   z-index: 1;
   width: 60%;
-  height: 141%;
+  height: 102.4%;
   background-color: #f0f8fe;
 }
 
@@ -2017,18 +2017,6 @@ body::after {
   -webkit-transform: translate(-132%);
       -ms-transform: translate(-132%);
           transform: translate(-132%);
-}
-
-[data-aos=slide-up].t-main__decor {
-  -webkit-transform: translate(0);
-      -ms-transform: translate(0);
-          transform: translate(0);
-}
-
-[data-aos^=slide][data-aos^=slide].aos-animate.t-main__decor {
-  -webkit-transform: translate(0, -45%);
-      -ms-transform: translate(0, -45%);
-          transform: translate(0, -45%);
 }
 
 [data-aos^=fade][data-aos^=fade].aos-animate.t-video__container {
