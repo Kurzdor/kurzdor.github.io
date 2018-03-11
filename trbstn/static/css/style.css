@@ -1960,7 +1960,7 @@ input:active {
 }
 
 body::after {
-  content: url(../images/t-arrow-right_hover.svg) url(../images/t-video__play-h.svg) url(../images/t-video__pause.svg) url(../images/t-video__sound_hover.png) url(../images/t-video__sound_muted.png) url(../images/t-video__sound_muted_hover.png);
+  content: url(../images/t-arrow-right--hover.svg) url(../images/t-video__play-h.svg) url(../images/t-video__pause.svg) url(../images/t-video__sound_hover.png) url(../images/t-video__sound_muted.png) url(../images/t-video__sound_muted_hover.png);
   display: none;
 }
 
@@ -2025,6 +2025,70 @@ body::after {
           transform: translate(-32%);
 }
 
+.t-preloader {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 250;
+  width: 100%;
+  height: 100%;
+  background-color: #24b5bf;
+}
+
+.t-preloader__inner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.t-preloader__circle {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 0.1875rem solid #fff;
+  border-top: none;
+  border-right: none;
+  -webkit-animation: rotating 2s linear infinite;
+          animation: rotating 2s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .t-header {
   position: relative;
   min-height: 56.25rem;
@@ -2076,6 +2140,12 @@ body::after {
 }
 
 .t-header__logo_manufacturer {
+  width: 13.125rem;
+  height: inherit;
+  background-color: #005683;
+}
+
+.t-header__logo_manufacturer a {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2088,13 +2158,14 @@ body::after {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 13.125rem;
+  width: inherit;
   height: inherit;
   padding-bottom: 1.5rem;
-  background-color: #005683;
+  background: none;
 }
 
-.t-header__logo_manufacturer i {
+.t-header__logo_manufacturer a i {
+  display: block;
   width: 10.25rem;
   height: 3.375rem;
   background-image: url(../images/t-pharma-logo.png);
@@ -2227,7 +2298,7 @@ body::after {
           justify-content: space-between;
   position: relative;
   z-index: 210;
-  height: 21.875rem;
+  height: 12.5rem;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -2458,6 +2529,26 @@ body::after {
   height: 47.5rem;
 }
 
+.t-video__container:hover .t-video__preview {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.t-video__container:hover .t-video__play:hover .t-video__preview {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.t-video__container.active {
+  -webkit-transform: translate(0) !important;
+      -ms-transform: translate(0) !important;
+          transform: translate(0) !important;
+}
+
+.t-video__container.active:hover .t-video__pause {
+  display: block;
+}
+
 .t-video__container .t-video__preview {
   display: block;
   position: absolute;
@@ -2466,8 +2557,19 @@ body::after {
   background-image: url(../images/t-video__preview.jpg);
   background-size: contain;
   background-repeat: no-repeat;
+  -webkit-transition: -webkit-filter cubic-bezier(0.77, 0, 0.175, 1) 0.25s;
+  transition: -webkit-filter cubic-bezier(0.77, 0, 0.175, 1) 0.25s;
+  -o-transition: filter cubic-bezier(0.77, 0, 0.175, 1) 0.25s;
+  transition: filter cubic-bezier(0.77, 0, 0.175, 1) 0.25s;
+  transition: filter cubic-bezier(0.77, 0, 0.175, 1) 0.25s, -webkit-filter cubic-bezier(0.77, 0, 0.175, 1) 0.25s;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
+}
+
+.t-video__container .t-video__preview:hover {
+  cursor: pointer;
+  -webkit-filter: none;
+          filter: none;
 }
 
 .t-video__container .t-video__player {
@@ -2484,10 +2586,6 @@ body::after {
 
 .t-video__container .t-video__player:hover {
   cursor: pointer;
-}
-
-.t-video__container.active:hover .t-video__pause {
-  display: block;
 }
 
 .t-video__play {
@@ -2540,6 +2638,11 @@ body::after {
 
 .t-video__play:hover .t-play__descr {
   color: #8e9295;
+}
+
+.t-video__play:hover > .t-video__container .t-video__preview {
+  -webkit-filter: none;
+          filter: none;
 }
 
 .t-video__pause {
