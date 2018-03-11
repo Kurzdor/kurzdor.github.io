@@ -1883,8 +1883,6 @@ template {
   -webkit-transform: perspective(2500px) rotateX(0);
           transform: perspective(2500px) rotateX(0);
 }
-
-/*# sourceMappingURL=aos.css.map*/
 @font-face {
   font-family: 'Helvetica Neue';
   src: url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff"), url("../fonts/HelveticaNeue.svg#HelveticaNeue") format("svg");
@@ -2344,6 +2342,24 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 5.625rem;
+}
+
+.t-header__presentation.active {
+  height: 100%;
+  margin-top: 0;
+}
+
+.t-header__presentation.active .t-header__medicine {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -9.375rem;
+  padding-top: 0;
 }
 
 .t-medicine__inner {
@@ -2819,14 +2835,44 @@ body {
   }
 }
 
+@media only screen and (min-width: 670px) and (max-width: 1024px) {
+  .t-header__presentation {
+    height: 75%;
+  }
+  .t-header__medicine {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .t-header__cta {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0;
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .t-container {
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-  }
-  .t-header__cta {
-    padding-top: 6rem;
   }
   .t-header__cta span {
     font-size: 2.625rem;
@@ -2964,14 +3010,30 @@ body {
   .t-main__decor {
     height: 111.9%;
   }
+  .t-menu__nav {
+    padding-right: 6rem;
+  }
 }
 
 @media only screen and (max-width: 670px) {
-  .t-header__medicine {
-    display: none;
+  .t-header__presentation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 75%;
+    margin-top: 0;
   }
   .t-header__cta span {
     font-size: 3.75rem;
+  }
+  .t-medicine__inner {
+    z-index: 1;
   }
   .t-header::after {
     width: 100%;
@@ -3002,8 +3064,30 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
+  .t-header {
+    min-height: 55rem;
+  }
   .t-main__decor {
-    height: 113.8%;
+    height: 100%;
+  }
+  .t-header__medicine {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+  .t-medicine__inner {
+    width: 100%;
+    height: 80vw;
+    margin: 0;
+  }
+  .t-header__cta {
+    padding: 0;
+  }
+  .t-main__use {
+    padding: 3.5rem 0 1.5rem 0;
   }
   .t-use__article {
     -webkit-box-orient: vertical;
@@ -3015,21 +3099,99 @@ body {
   .t-use__article .t-use__illustration {
     width: 100%;
     height: 130vw;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+    background-color: transparent;
   }
   .t-use__article_paired .t-use__illustration {
     height: 90vw;
+    background-color: transparent;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .t-use__article .t-use__text {
     width: 100%;
   }
+  .t-video__container {
+    height: 22.8125rem;
+  }
+  .t-video__container .t-video__player {
+    height: 22.8125rem;
+  }
+  .t-main__video {
+    padding-bottom: 1.5rem;
+  }
+  .t-video__descr {
+    position: relative;
+    width: 100%;
+  }
+  .t-video__descr span {
+    font-size: 1.875rem;
+  }
+  .t-video__descr a {
+    margin-top: 1rem;
+  }
+  .t-footer {
+    height: 5.75rem;
+  }
+  .t-footer .t-container {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 475px) {
+  .t-header {
+    min-height: 50rem;
+  }
   .t-header__cta span {
     font-size: 2.5rem;
   }
+  .t-header__logo {
+    position: absolute;
+    top: 7rem;
+    width: 10.625rem;
+    height: 3.125rem;
+  }
   .t-header__logo_manufacturer {
-    display: none;
+    width: 11rem;
+    height: 5.5rem;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+    position: relative;
+    top: -1rem;
+  }
+  .t-header__logo_manufacturer a {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0;
+  }
+  .t-header__medicine {
+    position: relative;
+    top: 1.75rem;
+  }
+  .t-header__cta span {
+    padding-right: 4rem;
+  }
+  .t-header__cta a {
+    margin-top: 2rem;
+  }
+  .t-menu__nav {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 0;
   }
   .t-video__container {
     height: 60.5vw;
@@ -3042,13 +3204,20 @@ body {
         -ms-transform: translate(0);
             transform: translate(0);
   }
-  .t-video__descr {
-    position: relative;
-    width: 100%;
-  }
-  .t-video__descr span {
-    font-size: 1.875rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .t-menu__nav {
+    padding-right: 6rem;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 320px) and (height: 480px) {
+  .t-header {
+    min-height: 41.25rem;
+  }
+  .t-medicine__inner {
+    width: 60%;
+    height: 52vw;
+  }
+}
