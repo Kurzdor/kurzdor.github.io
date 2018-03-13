@@ -3041,6 +3041,9 @@ body {
 }
 
 @media only screen and (max-width: 670px) {
+  .t-header {
+    min-height: 55rem;
+  }
   .t-header__presentation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3080,10 +3083,6 @@ body {
     margin-top: 1rem;
   }
   .t-header__medicine {
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
     padding-top: 0;
   }
   .t-medicine__inner {
@@ -3121,7 +3120,7 @@ body {
     min-height: 55rem;
   }
   .t-header__presentation {
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
   .t-medicine__inner {
     width: 27rem;
@@ -3138,7 +3137,7 @@ body {
     padding-right: 16px;
   }
   .t-header {
-    min-height: 53rem;
+    min-height: 50rem;
   }
   .t-main__decor {
     height: 100%;
@@ -3150,10 +3149,6 @@ body {
             justify-content: center;
     margin: 0;
     padding: 0;
-    -webkit-box-ordinal-group: 2;
-    -webkit-order: 1;
-        -ms-flex-order: 1;
-            order: 1;
   }
   .t-medicine__inner {
     top: 1.25rem;
@@ -3272,6 +3267,9 @@ body {
 }
 
 @media only screen and (max-width: 475px) {
+  .t-header__presentation {
+    margin-top: 0;
+  }
   .t-header__logo {
     position: absolute;
     top: 6rem;
